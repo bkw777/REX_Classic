@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "REX1 bkw"
 Date "2019-06-29"
-Rev "4"
+Rev "12"
 Comp ""
 Comment1 "Original: Steven Adolph"
 Comment2 "Modified: Brian White"
@@ -961,7 +961,7 @@ U 1 1 5D27638E
 P 2800 5860
 F 0 "J1" H 2720 5080 50  0000 C CNN
 F 1 "Molex_DIP28_edge_contacts" H 2700 6720 50  0000 C CNN
-F 2 "000_LOCAL:pcb2molex8878" H 2262 4998 60  0001 L CNN
+F 2 "000_LOCAL:pcb2molex8878_chamfer" H 2262 4998 60  0001 L CNN
 F 3 "" H 3000 6160 60  0001 L CNN
 	1    2800 5860
 	1    0    0    -1  

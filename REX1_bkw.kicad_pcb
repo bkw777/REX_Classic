@@ -10,6 +10,13 @@
   )
 
   (page A4)
+  (title_block
+    (title REX1_bkw)
+    (rev 12)
+    (comment 1 "Original: Steve Adolph")
+    (comment 2 "Modified: Brian K. White")
+  )
+
   (layers
     (0 Top signal)
     (31 Bottom signal)
@@ -34,7 +41,7 @@
   )
 
   (setup
-    (last_trace_width 0.4064)
+    (last_trace_width 0.1778)
     (user_trace_width 0.1778)
     (user_trace_width 0.3048)
     (user_trace_width 0.4064)
@@ -188,7 +195,7 @@
     (add_net GND)
   )
 
-  (module 000_LOCAL:pcb2molex8878 locked (layer Top) (tedit 5E3B347E) (tstamp 5D59F431)
+  (module 000_LOCAL:pcb2molex8878_chamfer locked (layer Top) (tedit 5E3B347E) (tstamp 5D59F431)
     (at 147.2184 99.187)
     (descr "Castellated edge contacts to fit Molex 8878 Socket")
     (path /5D27638E)
@@ -873,7 +880,7 @@
   (gr_text PORT_EN (at 149.733 84.8995 -90) (layer F.SilkS) (tstamp 5D250528)
     (effects (font (size 0.6096 0.6096) (thickness 0.0762)))
   )
-  (gr_text "bkw c12" (at 154.0129 99.187 -90) (layer F.SilkS)
+  (gr_text BKW_12 (at 154.0129 99.187 -90) (layer F.SilkS)
     (effects (font (size 0.6096 0.6096) (thickness 0.0508)))
   )
   (gr_text U3=LP2980-3.3 (at 147.2184 109.855 90) (layer B.SilkS) (tstamp 5D15D5FC)

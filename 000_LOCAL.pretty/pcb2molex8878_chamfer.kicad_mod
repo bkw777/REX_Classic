@@ -1,4 +1,4 @@
-(module pcb2molex8878 (layer F.Cu) (tedit 5E3B347E)
+(module pcb2molex8878_chamfer (layer F.Cu) (tedit 5E3B347E)
   (descr "Castellated edge contacts to fit Molex 8878 Socket")
   (solder_mask_margin -0.28)
   (fp_text reference J? (at -0.9906 -0.9906 -90) (layer Dwgs.User) hide
