@@ -24,7 +24,7 @@
     (33 F.Adhes user hide)
     (34 B.Paste user hide)
     (35 F.Paste user hide)
-    (36 B.SilkS user hide)
+    (36 B.SilkS user)
     (37 F.SilkS user hide)
     (38 B.Mask user hide)
     (39 F.Mask user hide)
@@ -41,7 +41,7 @@
   )
 
   (setup
-    (last_trace_width 0.4064)
+    (last_trace_width 0.1778)
     (user_trace_width 0.3048)
     (user_trace_width 0.4064)
     (trace_clearance 0.1778)
@@ -877,7 +877,7 @@
     )
   )
 
-  (gr_text "LEGS: TE 144242-1" (at 153.0184 112.817) (layer B.SilkS) (tstamp 5E4FD78D)
+  (gr_text "LEGS: TE 1544210" (at 153.0184 112.817) (layer B.SilkS) (tstamp 5E4FD78D)
     (effects (font (size 0.6096 0.6096) (thickness 0.0762)) (justify left mirror))
   )
   (gr_text NEC (at 148.6084 105.697 -90) (layer F.SilkS) (tstamp 5E4F95C7)
