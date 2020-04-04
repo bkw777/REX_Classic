@@ -19,7 +19,7 @@
 
   (layers
     (0 Top signal)
-    (31 Bottom signal hide)
+    (31 Bottom signal)
     (32 B.Adhes user hide)
     (33 F.Adhes user hide)
     (34 B.Paste user hide)
@@ -197,6 +197,7 @@
     (descr "Castellated edge contacts to fit Molex 8878 Socket")
     (path /5D27638E)
     (solder_mask_margin -0.28)
+    (attr virtual)
     (fp_text reference J1 (at -0.9906 -0.9906 -90) (layer Dwgs.User) hide
       (effects (font (size 1.2065 1.2065) (thickness 0.127)) (justify left bottom))
     )
@@ -290,6 +291,7 @@
     (at 147.2184 99.187)
     (descr "Castellated edge contacts to fit Molex 8878 Socket")
     (solder_mask_margin -0.28)
+    (attr virtual)
     (fp_text reference carrier? (at -1.5 0 -90) (layer Dwgs.User) hide
       (effects (font (size 1.2065 1.2065) (thickness 0.127)) (justify left bottom))
     )
@@ -346,8 +348,8 @@
     (descr "jamb connector, 4 pin, staggered")
     (path /5D265CE5)
     (solder_mask_margin -0.17272)
-    (fp_text reference J3 (at -1.332036 -1.850661 -180) (layer Dwgs.User)
-      (effects (font (size 1.2065 1.2065) (thickness 0.127)) (justify right bottom))
+    (fp_text reference J3 (at 0 0 -180) (layer Dwgs.User)
+      (effects (font (size 1.2065 1.2065) (thickness 0.127)) (justify bottom))
     )
     (fp_text value PRG (at 0.039564 2.518139 unlocked) (layer F.Fab)
       (effects (font (size 1.2065 1.2065) (thickness 0.1016)) (justify bottom))
@@ -371,8 +373,8 @@
     (descr "6 pin jamb connector, perpendicular offsets")
     (path /5D38CEC5)
     (solder_mask_margin -0.17272)
-    (fp_text reference J2 (at -1.288539 -1.699304 -180) (layer Dwgs.User)
-      (effects (font (size 1.2065 1.2065) (thickness 0.127)) (justify right bottom))
+    (fp_text reference J2 (at 0 0 -180) (layer Dwgs.User)
+      (effects (font (size 1.2065 1.2065) (thickness 0.127)) (justify bottom))
     )
     (fp_text value JTAG (at 0.057661 2.669496 unlocked) (layer F.Fab)
       (effects (font (size 1.2065 1.2065) (thickness 0.1016)) (justify bottom))
@@ -443,7 +445,7 @@
     (tags "TSOP I 32")
     (path /5D294874)
     (attr smd)
-    (fp_text reference U2 (at -1.58496 -0.44958 90) (layer B.SilkS)
+    (fp_text reference U2 (at -1.58496 -0.44958 90) (layer B.SilkS) hide
       (effects (font (size 1.2065 1.2065) (thickness 0.1016)) (justify left bottom mirror))
     )
     (fp_text value 29F800 (at -3.77698 2.97942 90) (layer B.SilkS)
@@ -673,7 +675,7 @@
     (at 147.1168 99.187 270)
     (path /5D2858A9)
     (attr smd)
-    (fp_text reference U1 (at -1.4859 0.2667 270 unlocked) (layer F.SilkS)
+    (fp_text reference U1 (at -1.4859 0.2667 270 unlocked) (layer F.SilkS) hide
       (effects (font (size 1.2065 1.2065) (thickness 0.1016)) (justify left bottom))
     )
     (fp_text value XCR3064XL-10VQ44 (at -8.1534 -8.9662 180) (layer Dwgs.User) hide

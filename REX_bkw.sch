@@ -4,7 +4,7 @@ EELAYER END
 $Descr USLedger 17000 11000
 encoding utf-8
 Sheet 1 1
-Title "REX1 bkw"
+Title "REX bkw"
 Date "2019-06-29"
 Rev "12"
 Comp ""
@@ -237,7 +237,7 @@ Text Label 15130 5290 0    50   ~ 0
 GND
 Wire Wire Line
 	8430 4090 8430 4590
-Text Label 8430 4390 1    50   ~ 0
+Text Label 8430 4590 1    50   ~ 0
 GND
 Wire Wire Line
 	9830 6090 9230 6090
@@ -381,7 +381,7 @@ Wire Wire Line
 	8130 3790 8130 4590
 Text Label 4730 3790 0    50   ~ 0
 ALE
-Text Label 8130 4290 1    50   ~ 0
+Text Label 8130 4590 1    50   ~ 0
 ALE
 Text Label 3420 5910 2    50   ~ 0
 ~RD
@@ -393,7 +393,7 @@ Text Label 4730 3390 0    50   ~ 0
 ~RD
 Wire Wire Line
 	7930 4090 7930 4590
-Text Label 7930 4390 1    50   ~ 0
+Text Label 7930 4590 1    50   ~ 0
 +3V3
 Wire Wire Line
 	6430 5990 7030 5990
@@ -655,7 +655,7 @@ PORT_EN
 Text Notes 3950 9090 0    60   ~ 0
 1 uf
 Connection ~ 13030 8190
-Text Label 8230 4190 1    50   ~ 0
+Text Label 8230 4590 1    50   ~ 0
 ~RESET
 Text Label 3420 5310 2    50   ~ 0
 ~CS
@@ -967,7 +967,7 @@ F 3 "" H 3000 6160 60  0001 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 000_LOCAL:XCR3064XL-10VQ44 U1
+L 000_LOCAL:XCR3064-VQ44_ U1
 U 1 1 5D2858A9
 P 8530 5290
 F 0 "U1" H 8040 5180 59  0000 L CNN
@@ -978,7 +978,7 @@ F 3 "" H 8530 5290 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 000_LOCAL:29F800 U2
+L 000_LOCAL:29F800_ U2
 U 1 1 5D294874
 P 13730 5190
 F 0 "U2" H 14120 4660 59  0000 C CNN
@@ -1067,14 +1067,16 @@ Text Notes 1740 4240 0    50   ~ 0
 Connection ~ 10800 8190
 Wire Bus Line
 	10800 8190 13030 8190
+Wire Wire Line
+	12930 6590 13030 6590
+Wire Wire Line
+	13030 6590 13530 6590
 Wire Bus Line
 	4630 7060 4630 8190
 Wire Bus Line
 	5630 6190 5630 8290
 Wire Bus Line
 	5630 8290 16130 8290
-Wire Wire Line
-	12930 6590 13530 6590
 Wire Bus Line
 	16130 4390 16130 8290
 Wire Bus Line
@@ -1090,9 +1092,11 @@ Wire Bus Line
 Wire Bus Line
 	15630 5590 15630 8190
 Wire Bus Line
+	13030 4790 13030 6590
+Wire Bus Line
+	13030 6590 13030 8190
+Wire Bus Line
 	4630 2790 4630 7060
 Wire Bus Line
 	3520 5110 3520 7060
-Wire Bus Line
-	13030 4790 13030 8190
 $EndSCHEMATC

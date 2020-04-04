@@ -4,7 +4,7 @@ EELAYER END
 $Descr USLedger 17000 11000
 encoding utf-8
 Sheet 1 1
-Title "REX 8201 bkw"
+Title "REX NEC bkw"
 Date "2020-03-23"
 Rev "2"
 Comp ""
@@ -1047,6 +1047,8 @@ Wire Wire Line
 	6970 6040 6080 6040
 Wire Wire Line
 	6080 6040 6080 1750
+Text Label 6580 6040 0    50   ~ 0
+TP1
 Wire Bus Line
 	6480 7060 6480 7740
 Wire Bus Line
@@ -1061,6 +1063,4 @@ Wire Bus Line
 	3250 4430 3250 7060
 Wire Bus Line
 	10730 3870 10730 7060
-Text Label 6580 6040 0    50   ~ 0
-TP1
 $EndSCHEMATC
