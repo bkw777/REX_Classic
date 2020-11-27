@@ -214,15 +214,7 @@ Wire Wire Line
 Wire Wire Line
 	15230 6990 14730 6990
 Wire Wire Line
-	14730 5290 15130 5290
-Wire Wire Line
-	15130 5290 15130 5390
-Wire Wire Line
 	15330 5390 15230 5390
-Wire Wire Line
-	15230 5390 15130 5390
-Wire Wire Line
-	15130 5390 14730 5390
 Wire Wire Line
 	15230 5690 15230 5390
 Connection ~ 15230 5890
@@ -230,11 +222,10 @@ Connection ~ 15230 6090
 Connection ~ 15230 6390
 Connection ~ 15230 6590
 Connection ~ 15230 6790
-Connection ~ 15130 5390
 Connection ~ 15230 5690
 Connection ~ 15230 5390
-Text Label 15130 5290 0    50   ~ 0
-GND
+Text Label 14730 5290 0    50   ~ 0
+~BYTE
 Wire Wire Line
 	8430 4090 8430 4590
 Text Label 8430 4590 1    50   ~ 0
@@ -274,69 +265,69 @@ Text Label 5730 6190 0    50   ~ 0
 Wire Wire Line
 	15530 6690 14730 6690
 Text Label 15530 6690 2    50   ~ 0
-AD2
+D2
 Wire Wire Line
 	10700 5390 9230 5390
 Text Label 10700 5390 2    50   ~ 0
-AD2
+D2
 Wire Wire Line
 	15530 6890 14730 6890
 Text Label 15530 6890 2    50   ~ 0
-AD1
+D1
 Wire Wire Line
 	10700 5290 9230 5290
 Text Label 10700 5290 2    50   ~ 0
-AD1
+D1
 Text Label 3490 3120 2    50   ~ 0
-AD1
+D1
 Wire Wire Line
 	15530 7090 14730 7090
 Text Label 15530 7090 2    50   ~ 0
-AD0
+D0
 Wire Wire Line
 	10700 5190 9230 5190
 Text Label 10700 5190 2    50   ~ 0
-AD0
+D0
 Wire Wire Line
 	15530 6490 14730 6490
 Text Label 15530 6490 2    50   ~ 0
-AD3
+D3
 Wire Wire Line
 	10700 5490 9230 5490
 Text Label 10700 5490 2    50   ~ 0
-AD3
+D3
 Wire Wire Line
 	15530 6190 14730 6190
 Text Label 15530 6190 2    50   ~ 0
-AD4
+D4
 Wire Wire Line
 	10700 5690 9230 5690
 Text Label 10700 5690 2    50   ~ 0
-AD4
+D4
 Wire Wire Line
 	15530 5990 14730 5990
 Text Label 15530 5990 2    50   ~ 0
-AD5
+D5
 Wire Wire Line
 	10700 5790 9230 5790
 Text Label 10700 5790 2    50   ~ 0
-AD5
+D5
 Wire Wire Line
 	15530 5790 14730 5790
 Text Label 15530 5790 2    50   ~ 0
-AD6
+D6
 Wire Wire Line
 	10700 5890 9230 5890
 Text Label 10700 5890 2    50   ~ 0
-AD6
+D6
 Wire Wire Line
 	15530 5590 14730 5590
 Text Label 15530 5590 2    50   ~ 0
-AD7
+D7
 Wire Wire Line
 	10700 5990 9230 5990
 Text Label 10700 5990 2    50   ~ 0
-AD7
+D7
 Text Label 12930 6590 0    50   ~ 0
 RY_BY
 Wire Wire Line
@@ -361,7 +352,7 @@ Wire Wire Line
 	1130 8490 1130 8690
 Text Label 1130 7160 0    50   ~ 0
 +5
-Text Label 4730 2790 0    50   ~ 0
+Text Label 4730 2890 0    50   ~ 0
 +5
 Text Label 3420 5210 2    50   ~ 0
 A14
@@ -534,7 +525,7 @@ Entry Wire Line
 Entry Wire Line
 	3490 4260 3590 4160
 Entry Wire Line
-	4630 2890 4730 2790
+	4630 2900 4730 3000
 Entry Wire Line
 	4630 3490 4730 3590
 Entry Wire Line
@@ -580,23 +571,23 @@ Entry Wire Line
 Entry Wire Line
 	16030 7190 16130 7090
 $Comp
-L Device:C C1
+L 000_LOCAL:C C1
 U 1 1 327B8ADF
 P 3830 8940
 F 0 "C1" H 3950 8910 59  0000 L BNN
 F 1 "C-USC0805" H 3950 8810 59  0001 L BNN
-F 2 "Capacitors_SMD:C_0805" H 3830 8940 50  0001 C CNN
+F 2 "000_LOCAL:C_0805" H 3830 8940 50  0001 C CNN
 F 3 "" H 3830 8940 50  0001 C CNN
 	1    3830 8940
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R1
+L 000_LOCAL:R R1
 U 1 1 2604F989
 P 3890 7870
 F 0 "R1" V 4010 7820 59  0000 L BNN
 F 1 "10k" H 3740 7740 59  0001 L BNN
-F 2 "Resistors_SMD:R_0805" H 3890 7870 50  0001 C CNN
+F 2 "000_LOCAL:R_0805" H 3890 7870 50  0001 C CNN
 F 3 "" H 3890 7870 50  0001 C CNN
 	1    3890 7870
 	0    1    1    0   
@@ -636,8 +627,6 @@ Wire Wire Line
 Wire Wire Line
 	2430 8490 2690 8490
 Connection ~ 1130 8490
-Wire Wire Line
-	8230 2790 8230 4590
 Entry Wire Line
 	12730 4390 12830 4490
 Entry Wire Line
@@ -649,7 +638,7 @@ Wire Wire Line
 Wire Wire Line
 	8630 4490 12730 4490
 Wire Wire Line
-	4730 2790 8230 2790
+	4730 2890 4800 2890
 Text Label 3490 4260 2    50   ~ 0
 PORT_EN
 Text Notes 3950 9090 0    60   ~ 0
@@ -833,7 +822,7 @@ $EndComp
 Entry Wire Line
 	3490 3020 3590 2920
 Text Label 3490 3020 2    50   ~ 0
-AD6
+D6
 Wire Wire Line
 	7630 7290 6530 7290
 $Comp
@@ -850,13 +839,13 @@ $EndComp
 Text Label 2530 3320 0    50   ~ 0
 TMS
 Wire Wire Line
-	2530 3320 3490 3320
+	2530 3320 2900 3320
 Wire Wire Line
-	2530 3220 3490 3220
+	2530 3220 2900 3220
 Wire Wire Line
-	2530 3120 3490 3120
+	2530 3120 2900 3120
 Wire Wire Line
-	2530 3020 3490 3020
+	2530 3020 2900 3020
 Text Label 2530 3220 0    50   ~ 0
 TDI
 Text Label 2530 3120 0    50   ~ 0
@@ -876,29 +865,29 @@ GND
 Entry Wire Line
 	3420 5910 3520 5810
 Text Label 2080 6410 0    50   ~ 0
-AD2
+D2
 Entry Wire Line
 	3420 5810 3520 5710
 Text Label 2080 6310 0    50   ~ 0
-AD1
+D1
 Entry Wire Line
 	3420 5710 3520 5610
 Text Label 2080 6210 0    50   ~ 0
-AD0
+D0
 Entry Wire Line
 	1980 5210 2080 5310
 Text Label 2080 5310 0    50   ~ 0
 A10
 Text Label 3420 6510 2    50   ~ 0
-AD3
+D3
 Text Label 3420 6410 2    50   ~ 0
-AD4
+D4
 Text Label 3420 6310 2    50   ~ 0
-AD5
+D5
 Text Label 3420 6210 2    50   ~ 0
-AD6
+D6
 Text Label 3420 6110 2    50   ~ 0
-AD7
+D7
 Entry Wire Line
 	3420 6410 3520 6310
 Entry Wire Line
@@ -961,7 +950,7 @@ U 1 1 5D27638E
 P 2800 5860
 F 0 "J1" H 2720 5080 50  0000 C CNN
 F 1 "Molex_DIP28_edge_contacts" H 2700 6720 50  0000 C CNN
-F 2 "000_LOCAL:pcb2molex8878_chamfer" H 2262 4998 60  0001 L CNN
+F 2 "000_LOCAL:pcb2molex8878" H 2262 4998 60  0001 L CNN
 F 3 "" H 3000 6160 60  0001 L CNN
 	1    2800 5860
 	1    0    0    -1  
@@ -1067,22 +1056,98 @@ Text Notes 1740 4240 0    50   ~ 0
 Connection ~ 10800 8190
 Wire Bus Line
 	10800 8190 13030 8190
+Text Label 8330 4590 1    50   ~ 0
+~RD
+$Comp
+L Device:Net-Tie_2 NT1
+U 1 1 5FBB145C
+P 4900 2890
+F 0 "NT1" H 4900 3130 50  0001 C CNN
+F 1 "Net-Tie_2" H 4900 3030 50  0001 C CNN
+F 2 "000_LOCAL:Net_Tie_2_0.18mm" H 4900 2890 50  0001 C CNN
+F 3 "~" H 4900 2890 50  0001 C CNN
+	1    4900 2890
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	4630 3100 4730 3200
+Text Label 4730 3200 0    50   ~ 0
+~RESET
+Entry Wire Line
+	4630 2790 4730 2890
+Text Label 4730 3000 0    50   ~ 0
+~RESET
 Wire Wire Line
-	12930 6590 13030 6590
+	4730 3000 5000 3000
 Wire Wire Line
-	13030 6590 13530 6590
+	5000 3000 5000 2890
+Wire Wire Line
+	4730 3200 8230 3200
+Wire Wire Line
+	8230 3200 8230 4590
+NoConn ~ 7730 6790
+NoConn ~ 8330 6790
+NoConn ~ 8430 6790
+NoConn ~ 8530 6790
+NoConn ~ 7030 5890
+Wire Wire Line
+	14730 5390 15230 5390
+Connection ~ 4630 2790
+Text Label 4730 2600 0    50   ~ 0
+GND
+Entry Wire Line
+	4630 2610 4730 2710
+Wire Wire Line
+	4730 2600 4800 2600
+$Comp
+L Device:Net-Tie_2 NT2
+U 1 1 5FCB31BF
+P 4900 2600
+F 0 "NT2" H 4900 2840 50  0001 C CNN
+F 1 "Net-Tie_2" H 4900 2740 50  0001 C CNN
+F 2 "000_LOCAL:Net_Tie_2_0.18mm" H 4900 2600 50  0001 C CNN
+F 3 "~" H 4900 2600 50  0001 C CNN
+	1    4900 2600
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	4630 2500 4730 2600
+Text Label 4730 2710 0    50   ~ 0
+~BYTE
+Wire Wire Line
+	4730 2710 5000 2710
+Wire Wire Line
+	5000 2710 5000 2600
+Entry Wire Line
+	16030 5290 16130 5190
+Wire Wire Line
+	14730 5290 16030 5290
+Text Label 16030 5290 2    50   ~ 0
+~BYTE
+NoConn ~ 2400 6110
+NoConn ~ 2400 6010
+NoConn ~ 2400 5910
+NoConn ~ 2400 5810
+NoConn ~ 2400 5710
+NoConn ~ 2400 5610
+NoConn ~ 2400 5510
+NoConn ~ 2400 5410
+Wire Bus Line
+	4630 2500 4630 2790
 Wire Bus Line
 	4630 7060 4630 8190
 Wire Bus Line
 	5630 6190 5630 8290
 Wire Bus Line
 	5630 8290 16130 8290
+Wire Wire Line
+	12930 6590 13530 6590
 Wire Bus Line
 	16130 4390 16130 8290
 Wire Bus Line
-	1980 5110 1980 7060
-Wire Bus Line
 	4630 8190 10800 8190
+Wire Bus Line
+	1980 5110 1980 7060
 Wire Bus Line
 	12830 4390 12830 6590
 Wire Bus Line
@@ -1092,11 +1157,61 @@ Wire Bus Line
 Wire Bus Line
 	15630 5590 15630 8190
 Wire Bus Line
-	13030 4790 13030 6590
-Wire Bus Line
-	13030 6590 13030 8190
-Wire Bus Line
 	4630 2790 4630 7060
 Wire Bus Line
 	3520 5110 3520 7060
+Wire Bus Line
+	13030 4790 13030 8190
+$Comp
+L Device:Net-Tie_2 NT3
+U 1 1 5FD83265
+P 3000 3020
+F 0 "NT3" H 3000 3050 50  0001 C CNN
+F 1 "Net-Tie_2" H 3000 2990 50  0001 C CNN
+F 2 "000_LOCAL:Net_Tie_2_0.18mm" H 3000 3020 50  0001 C CNN
+F 3 "~" H 3000 3020 50  0001 C CNN
+	1    3000 3020
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 3020 3490 3020
+$Comp
+L Device:Net-Tie_2 NT4
+U 1 1 5FD846AF
+P 3000 3120
+F 0 "NT4" H 3000 3150 50  0001 C CNN
+F 1 "Net-Tie_2" H 3000 3090 50  0001 C CNN
+F 2 "000_LOCAL:Net_Tie_2_0.18mm" H 3000 3120 50  0001 C CNN
+F 3 "~" H 3000 3120 50  0001 C CNN
+	1    3000 3120
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 3120 3490 3120
+$Comp
+L Device:Net-Tie_2 NT5
+U 1 1 5FD8498E
+P 3000 3220
+F 0 "NT5" H 3000 3250 50  0001 C CNN
+F 1 "Net-Tie_2" H 3000 3190 50  0001 C CNN
+F 2 "000_LOCAL:Net_Tie_2_0.18mm" H 3000 3220 50  0001 C CNN
+F 3 "~" H 3000 3220 50  0001 C CNN
+	1    3000 3220
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 3220 3490 3220
+$Comp
+L Device:Net-Tie_2 NT6
+U 1 1 5FD84CB8
+P 3000 3320
+F 0 "NT6" H 3000 3350 50  0001 C CNN
+F 1 "Net-Tie_2" H 3000 3290 50  0001 C CNN
+F 2 "000_LOCAL:Net_Tie_2_0.18mm" H 3000 3320 50  0001 C CNN
+F 3 "~" H 3000 3320 50  0001 C CNN
+	1    3000 3320
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 3320 3490 3320
 $EndSCHEMATC
