@@ -1,6 +1,6 @@
-update=Mon 30 Nov 2020 08:55:31 PM EST
+update=Mon 30 Nov 2020 11:53:56 PM EST
 version=1
-last_client=kicad
+last_client=pcbnew
 [general]
 version=1
 RootSch=
@@ -39,9 +39,12 @@ MinMicroViaDiameter=0.4
 MinMicroViaDrill=0.25
 MinHoleToHole=0.25
 TrackWidth1=0.18
-TrackWidth2=0.3
+TrackWidth2=0.16
+TrackWidth3=0.3
 ViaDiameter1=0.4
 ViaDrill1=0.25
+ViaDiameter2=0.46
+ViaDrill2=0.3
 dPairWidth1=0.2
 dPairGap1=0.25
 dPairViaGap1=0.25
@@ -66,7 +69,7 @@ OthersTextSizeThickness=0.09999999999999999
 OthersTextItalic=0
 OthersTextUpright=1
 SolderMaskClearance=0
-SolderMaskMinWidth=0
+SolderMaskMinWidth=0.22
 SolderPasteClearance=0
 SolderPasteRatio=-0
 [pcbnew/Layer.F.Cu]
