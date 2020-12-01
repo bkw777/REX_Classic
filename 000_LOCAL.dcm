@@ -18,6 +18,12 @@ K OTP EPROM 256 KiBit
 F http://ww1.microchip.com/downloads/en/DeviceDoc/doc0014.pdf
 $ENDCMP
 #
+$CMP Net-Tie_2
+D Net tie, 2 pins
+K net tie short
+F ~
+$ENDCMP
+#
 $CMP R
 D Resistor
 K R res resistor

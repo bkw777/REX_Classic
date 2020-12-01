@@ -4,12 +4,12 @@ EELAYER END
 $Descr USLedger 17000 11000
 encoding utf-8
 Sheet 1 1
-Title "REX NEC bkw"
-Date "2020-03-23"
-Rev "2"
-Comp ""
-Comment1 "Original: Steven Adolph"
-Comment2 "Modified: Brian White"
+Title "REX NEC, BKW re-spin"
+Date "2020-11-30"
+Rev "4"
+Comp "Brian K. White - b.kenyon.w@gmail.com"
+Comment1 "Original design: Steven Adolph"
+Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -49,7 +49,7 @@ L 000_LOCAL:R R1
 U 1 1 2604F989
 P 7150 7640
 F 0 "R1" V 7100 7470 59  0000 L BNN
-F 1 "10k" V 7100 7620 59  0000 L BNN
+F 1 "47k" V 7100 7620 59  0000 L BNN
 F 2 "000_LOCAL:R_0805" H 7150 7640 50  0001 C CNN
 F 3 "" H 7150 7640 50  0001 C CNN
 	1    7150 7640
@@ -70,8 +70,6 @@ Text Notes 5790 8160 0    50   ~ 0
 Decoupling
 Text Notes 7170 3170 0    59   ~ 0
 XCR3032XL or XCR3064XL
-Text Label 4660 3830 2    50   ~ 0
-PORT_EN
 Text Notes 5790 8420 0    60   ~ 0
 1 uf
 $Comp
@@ -112,7 +110,7 @@ L power:+3V3 #PWR0107
 U 1 1 5D29CCF3
 P 3700 2390
 F 0 "#PWR0107" H 3700 2240 50  0001 C CNN
-F 1 "+3V3" V 3715 2518 50  0000 L CNN
+F 1 "+3V3" V 3690 2520 50  0000 L CNN
 F 2 "" H 3700 2390 50  0001 C CNN
 F 3 "" H 3700 2390 50  0001 C CNN
 	1    3700 2390
@@ -142,8 +140,6 @@ F 3 "~" H 3500 2590 50  0001 C CNN
 	1    3500 2590
 	-1   0    0    -1  
 $EndComp
-Text Label 3700 2890 0    50   ~ 0
-TMS
 Wire Wire Line
 	3700 2890 4660 2890
 Wire Wire Line
@@ -152,8 +148,6 @@ Wire Wire Line
 	3700 2690 4660 2690
 Wire Wire Line
 	3700 2590 4660 2590
-Text Label 3700 2590 0    50   ~ 0
-TCK
 Entry Wire Line
 	4660 5230 4760 5130
 Entry Wire Line
@@ -364,17 +358,6 @@ F 3 "" H 3810 8080 50  0001 C CNN
 	1    3810 8080
 	0    -1   -1   0   
 $EndComp
-$Comp
-L power:+5V #PWR0103
-U 1 1 5EA5EE38
-P 3810 8280
-F 0 "#PWR0103" H 3810 8130 50  0001 C CNN
-F 1 "+5V" V 3830 8420 50  0000 L CNN
-F 2 "" H 3810 8280 50  0001 C CNN
-F 3 "" H 3810 8280 50  0001 C CNN
-	1    3810 8280
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	6970 3980 6580 3980
 Wire Wire Line
@@ -456,13 +439,9 @@ Wire Wire Line
 Wire Wire Line
 	11220 5670 10830 5670
 Wire Wire Line
-	11220 3970 10830 3970
-Wire Wire Line
 	11220 4070 10830 4070
 Wire Wire Line
 	11220 4170 10830 4170
-Wire Wire Line
-	11220 4270 10830 4270
 Wire Wire Line
 	11220 4370 10830 4370
 Wire Wire Line
@@ -608,13 +587,9 @@ Entry Wire Line
 Entry Wire Line
 	10730 6270 10830 6370
 Entry Wire Line
-	10730 3870 10830 3970
-Entry Wire Line
 	10730 3970 10830 4070
 Entry Wire Line
 	10730 4070 10830 4170
-Entry Wire Line
-	10730 4170 10830 4270
 Entry Wire Line
 	10730 4270 10830 4370
 Entry Wire Line
@@ -658,17 +633,6 @@ Text Label 6580 7640 0    50   ~ 0
 PORT_EN
 Wire Wire Line
 	6580 7640 7000 7640
-$Comp
-L power:GND #PWR0109
-U 1 1 5EC9316F
-P 7300 7640
-F 0 "#PWR0109" H 7300 7390 50  0001 C CNN
-F 1 "GND" V 7340 7490 50  0000 R CNN
-F 2 "" H 7300 7640 50  0001 C CNN
-F 3 "" H 7300 7640 50  0001 C CNN
-	1    7300 7640
-	0    -1   -1   0   
-$EndComp
 $Comp
 L power:+3V3 #PWR0110
 U 1 1 5ECC20EA
@@ -895,8 +859,6 @@ Text Label 13010 5470 2    50   ~ 0
 GND
 Text Label 13010 5570 2    50   ~ 0
 GND
-Text Label 10830 3970 0    50   ~ 0
-GND
 Text Label 6580 4980 0    50   ~ 0
 eD3
 Text Label 6580 4780 0    50   ~ 0
@@ -912,7 +874,7 @@ L power:GND #PWR0122
 U 1 1 5EF51DB0
 P 3700 3530
 F 0 "#PWR0122" H 3700 3280 50  0001 C CNN
-F 1 "GND" V 3730 3380 50  0000 R CNN
+F 1 "GND" V 3700 3410 50  0000 R CNN
 F 2 "" H 3700 3530 50  0001 C CNN
 F 3 "" H 3700 3530 50  0001 C CNN
 	1    3700 3530
@@ -923,7 +885,7 @@ L power:+5V #PWR0123
 U 1 1 5EF52124
 P 3700 3630
 F 0 "#PWR0123" H 3700 3480 50  0001 C CNN
-F 1 "+5V" V 3670 3780 50  0000 L CNN
+F 1 "+5V" V 3690 3750 50  0000 L CNN
 F 2 "" H 3700 3630 50  0001 C CNN
 F 3 "" H 3700 3630 50  0001 C CNN
 	1    3700 3630
@@ -934,7 +896,7 @@ L power:+3V3 #PWR0124
 U 1 1 5EF524D8
 P 3700 3730
 F 0 "#PWR0124" H 3700 3580 50  0001 C CNN
-F 1 "+3V3" V 3670 3880 50  0000 L CNN
+F 1 "+3V3" V 3700 3850 50  0000 L CNN
 F 2 "" H 3700 3730 50  0001 C CNN
 F 3 "" H 3700 3730 50  0001 C CNN
 	1    3700 3730
@@ -972,13 +934,9 @@ Text Label 10830 5870 0    50   ~ 0
 eA14
 Text Label 6580 4280 0    50   ~ 0
 TMS
-Text Label 4660 2890 2    50   ~ 0
-TMS
 Text Label 10830 5970 0    50   ~ 0
 TMS
 Text Label 6580 4080 0    50   ~ 0
-TCK
-Text Label 4660 2590 2    50   ~ 0
 TCK
 Text Label 10830 6370 0    50   ~ 0
 TCK
@@ -1016,31 +974,6 @@ Text Notes 3700 2680 0    50   ~ 0
 TDO
 Text Notes 3700 2780 0    50   ~ 0
 TDI
-Text Label 10830 4270 0    50   ~ 0
-~RESET
-Entry Wire Line
-	6480 6080 6580 6180
-Text Label 6580 6180 0    50   ~ 0
-~RESET
-Wire Wire Line
-	6580 6180 6970 6180
-Entry Wire Line
-	6480 7740 6580 7840
-Wire Wire Line
-	6580 7840 7000 7840
-Text Label 6580 7840 0    50   ~ 0
-~RESET
-$Comp
-L power:+5V #PWR0125
-U 1 1 5E838367
-P 7000 7840
-F 0 "#PWR0125" H 7000 7690 50  0001 C CNN
-F 1 "+5V" V 7010 7990 50  0000 L CNN
-F 2 "" H 7000 7840 50  0001 C CNN
-F 3 "" H 7000 7840 50  0001 C CNN
-	1    7000 7840
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	6970 6080 6970 6040
 Wire Wire Line
@@ -1049,8 +982,74 @@ Wire Wire Line
 	6080 6040 6080 1750
 Text Label 6580 6040 0    50   ~ 0
 TP1
+NoConn ~ 6970 5680
+NoConn ~ 6970 5480
+NoConn ~ 6970 5380
+NoConn ~ 6970 5280
+NoConn ~ 6970 4480
+NoConn ~ 3600 6130
 Wire Bus Line
-	6480 7060 6480 7740
+	3250 7060 3250 8180
+Connection ~ 3250 7060
+Entry Wire Line
+	3250 8180 3350 8280
+Wire Wire Line
+	3350 8280 3810 8280
+Text Label 3350 8280 0    50   ~ 0
+sVCC
+Entry Wire Line
+	6480 7400 6580 7500
+Wire Wire Line
+	7300 7640 7300 7500
+Wire Wire Line
+	7300 7500 6580 7500
+Text Label 6580 7500 0    50   ~ 0
+GND
+Text Label 3700 2590 0    50   ~ 0
+TCK
+Text Label 3700 2890 0    50   ~ 0
+TMS
+Text Label 3700 3830 0    50   ~ 0
+PORT_EN
+Text Notes 6510 6190 0    50   ~ 0
+~RESET
+$Comp
+L power:+5V #PWR?
+U 1 1 5FD817E1
+P 6970 6180
+F 0 "#PWR?" H 6970 6030 50  0001 C CNN
+F 1 "+5V" V 6990 6350 50  0000 C CNN
+F 2 "" H 6970 6180 50  0001 C CNN
+F 3 "" H 6970 6180 50  0001 C CNN
+	1    6970 6180
+	0    -1   -1   0   
+$EndComp
+Text Notes 10760 4280 0    50   ~ 0
+~RESET
+$Comp
+L power:+5V #PWR?
+U 1 1 5FD8D230
+P 11220 4270
+F 0 "#PWR?" H 11220 4120 50  0001 C CNN
+F 1 "+5V" V 11240 4440 50  0000 C CNN
+F 2 "" H 11220 4270 50  0001 C CNN
+F 3 "" H 11220 4270 50  0001 C CNN
+	1    11220 4270
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FDCE74B
+P 11220 3970
+F 0 "#PWR?" H 11220 3720 50  0001 C CNN
+F 1 "GND" V 11200 3830 50  0000 R CNN
+F 2 "" H 11220 3970 50  0001 C CNN
+F 3 "" H 11220 3970 50  0001 C CNN
+	1    11220 3970
+	0    1    1    0   
+$EndComp
+Wire Bus Line
+	6480 7060 6480 7540
 Wire Bus Line
 	4760 2490 4760 7060
 Wire Bus Line

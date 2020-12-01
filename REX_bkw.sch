@@ -4,12 +4,12 @@ EELAYER END
 $Descr USLedger 17000 11000
 encoding utf-8
 Sheet 1 1
-Title "REX bkw"
-Date "2019-06-29"
-Rev "12"
-Comp ""
-Comment1 "Original: Steven Adolph"
-Comment2 "Modified: Brian White"
+Title "REX Classic, BKW re-spin"
+Date "2020-11-30"
+Rev "13"
+Comp "Brian K. White - b.kenyon.w@gmail.com"
+Comment1 "Original design: Steven Adolph"
+Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -352,7 +352,7 @@ Wire Wire Line
 	1130 8490 1130 8690
 Text Label 1130 7160 0    50   ~ 0
 +5
-Text Label 4730 2890 0    50   ~ 0
+Text Label 5200 8800 0    50   ~ 0
 +5
 Text Label 3420 5210 2    50   ~ 0
 A14
@@ -431,7 +431,7 @@ Entry Wire Line
 Entry Wire Line
 	15530 5790 15630 5690
 Entry Wire Line
-	15530 5590 15630 5690
+	15530 5590 15630 5490
 Entry Wire Line
 	15530 6290 15630 6190
 Entry Wire Line
@@ -525,7 +525,7 @@ Entry Wire Line
 Entry Wire Line
 	3490 4260 3590 4160
 Entry Wire Line
-	4630 2900 4730 3000
+	5100 8800 5200 8900
 Entry Wire Line
 	4630 3490 4730 3590
 Entry Wire Line
@@ -565,7 +565,7 @@ Entry Wire Line
 Entry Wire Line
 	8130 8290 8230 8190
 Entry Wire Line
-	5630 6290 5730 6190
+	5630 6090 5730 6190
 Entry Wire Line
 	16030 7390 16130 7290
 Entry Wire Line
@@ -584,13 +584,13 @@ $EndComp
 $Comp
 L 000_LOCAL:R R1
 U 1 1 2604F989
-P 3890 7870
-F 0 "R1" V 4010 7820 59  0000 L BNN
-F 1 "10k" H 3740 7740 59  0001 L BNN
-F 2 "000_LOCAL:R_0805" H 3890 7870 50  0001 C CNN
-F 3 "" H 3890 7870 50  0001 C CNN
-	1    3890 7870
-	0    1    1    0   
+P 5650 8600
+F 0 "R1" V 5770 8550 59  0000 L BNN
+F 1 "47k" V 5600 8520 59  0000 L BNN
+F 2 "000_LOCAL:R_0805" H 5650 8600 50  0001 C CNN
+F 3 "" H 5650 8600 50  0001 C CNN
+	1    5650 8600
+	0    -1   1    0   
 $EndComp
 $Comp
 L Connector:Conn_01x01_Male TP2
@@ -620,8 +620,6 @@ Text Notes 8750 6820 0    59   ~ 0
 XCR3032XL or XCR3064XL
 Text Notes 13590 8090 0    60   ~ 0
 bottom boot\nAM29F800BB, MX29F800CB
-Text Notes 3810 7820 0    60   ~ 0
-10k
 Wire Wire Line
 	3830 9090 3830 9290
 Wire Wire Line
@@ -638,7 +636,7 @@ Wire Wire Line
 Wire Wire Line
 	8630 4490 12730 4490
 Wire Wire Line
-	4730 2890 4800 2890
+	5200 8800 5270 8800
 Text Label 3490 4260 2    50   ~ 0
 PORT_EN
 Text Notes 3950 9090 0    60   ~ 0
@@ -836,26 +834,6 @@ F 3 "~" H 2330 3020 50  0001 C CNN
 	1    2330 3020
 	-1   0    0    -1  
 $EndComp
-Text Label 2530 3320 0    50   ~ 0
-TMS
-Wire Wire Line
-	2530 3320 2900 3320
-Wire Wire Line
-	2530 3220 2900 3220
-Wire Wire Line
-	2530 3120 2900 3120
-Wire Wire Line
-	2530 3020 2900 3020
-Text Label 2530 3220 0    50   ~ 0
-TDI
-Text Label 2530 3120 0    50   ~ 0
-TDO
-Text Label 2530 3020 0    50   ~ 0
-TCK
-Text Label 2530 2920 0    50   ~ 0
-GND
-Text Label 2530 2820 0    50   ~ 0
-VREF
 Wire Wire Line
 	6520 7090 6630 7090
 Entry Wire Line
@@ -979,35 +957,20 @@ F 3 "" H 13730 5190 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1130 7160 1130 8490
-$Comp
-L 000_LOCAL:LP2980 U3
-U 1 1 5D30DD1C
-P 1830 8590
-F 0 "U3" H 1880 8320 59  0000 C CNN
-F 1 "LP2980" H 1950 8580 59  0000 C CNN
-F 2 "000_LOCAL:SOT-23-5" H 1830 8590 50  0001 C CNN
-F 3 "" H 1830 8590 50  0001 C CNN
-	1    1830 8590
-	1    0    0    -1  
-$EndComp
 Entry Wire Line
-	4530 7870 4630 7770
-Wire Wire Line
-	4530 7870 4040 7870
+	5100 8500 5200 8600
 $Comp
 L power:GND #PWR0101
 U 1 1 5D3EDA7D
-P 3490 7870
-F 0 "#PWR0101" H 3490 7620 50  0001 C CNN
-F 1 "GND" V 3495 7742 50  0000 R CNN
-F 2 "" H 3490 7870 50  0001 C CNN
-F 3 "" H 3490 7870 50  0001 C CNN
-	1    3490 7870
-	0    1    1    0   
+P 5800 8600
+F 0 "#PWR0101" H 5800 8350 50  0001 C CNN
+F 1 "GND" V 5805 8472 50  0000 R CNN
+F 2 "" H 5800 8600 50  0001 C CNN
+F 3 "" H 5800 8600 50  0001 C CNN
+	1    5800 8600
+	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	3490 7870 3740 7870
-Text Label 4530 7870 2    50   ~ 0
+Text Label 5200 8600 0    50   ~ 0
 PORT_EN
 $Comp
 L Connector:Conn_01x04_Female J3
@@ -1061,12 +1024,12 @@ Text Label 8330 4590 1    50   ~ 0
 $Comp
 L Device:Net-Tie_2 NT1
 U 1 1 5FBB145C
-P 4900 2890
-F 0 "NT1" H 4900 3130 50  0001 C CNN
-F 1 "Net-Tie_2" H 4900 3030 50  0001 C CNN
-F 2 "000_LOCAL:Net_Tie_2_0.18mm" H 4900 2890 50  0001 C CNN
-F 3 "~" H 4900 2890 50  0001 C CNN
-	1    4900 2890
+P 5370 8800
+F 0 "NT1" H 5370 9040 50  0001 C CNN
+F 1 "Net-Tie_2" H 5370 8940 50  0001 C CNN
+F 2 "000_LOCAL:Net_Tie_2_0.18mm" H 5370 8800 50  0001 C CNN
+F 3 "~" H 5370 8800 50  0001 C CNN
+	1    5370 8800
 	1    0    0    -1  
 $EndComp
 Entry Wire Line
@@ -1074,13 +1037,11 @@ Entry Wire Line
 Text Label 4730 3200 0    50   ~ 0
 ~RESET
 Entry Wire Line
-	4630 2790 4730 2890
-Text Label 4730 3000 0    50   ~ 0
+	5100 8700 5200 8800
+Text Label 5200 8900 0    50   ~ 0
 ~RESET
 Wire Wire Line
-	4730 3000 5000 3000
-Wire Wire Line
-	5000 3000 5000 2890
+	5200 8900 5470 8900
 Wire Wire Line
 	4730 3200 8230 3200
 Wire Wire Line
@@ -1092,32 +1053,29 @@ NoConn ~ 8530 6790
 NoConn ~ 7030 5890
 Wire Wire Line
 	14730 5390 15230 5390
-Connection ~ 4630 2790
-Text Label 4730 2600 0    50   ~ 0
+Text Label 5200 9100 0    50   ~ 0
 GND
 Entry Wire Line
-	4630 2610 4730 2710
+	5100 9100 5200 9200
 Wire Wire Line
-	4730 2600 4800 2600
+	5200 9100 5270 9100
 $Comp
 L Device:Net-Tie_2 NT2
 U 1 1 5FCB31BF
-P 4900 2600
-F 0 "NT2" H 4900 2840 50  0001 C CNN
-F 1 "Net-Tie_2" H 4900 2740 50  0001 C CNN
-F 2 "000_LOCAL:Net_Tie_2_0.18mm" H 4900 2600 50  0001 C CNN
-F 3 "~" H 4900 2600 50  0001 C CNN
-	1    4900 2600
+P 5370 9100
+F 0 "NT2" H 5370 9340 50  0001 C CNN
+F 1 "Net-Tie_2" H 5370 9240 50  0001 C CNN
+F 2 "000_LOCAL:Net_Tie_2_0.18mm" H 5370 9100 50  0001 C CNN
+F 3 "~" H 5370 9100 50  0001 C CNN
+	1    5370 9100
 	1    0    0    -1  
 $EndComp
 Entry Wire Line
-	4630 2500 4730 2600
-Text Label 4730 2710 0    50   ~ 0
+	5100 9000 5200 9100
+Text Label 5200 9200 0    50   ~ 0
 ~BYTE
 Wire Wire Line
-	4730 2710 5000 2710
-Wire Wire Line
-	5000 2710 5000 2600
+	5200 9200 5470 9200
 Entry Wire Line
 	16030 5290 16130 5190
 Wire Wire Line
@@ -1132,12 +1090,53 @@ NoConn ~ 2400 5710
 NoConn ~ 2400 5610
 NoConn ~ 2400 5510
 NoConn ~ 2400 5410
+Wire Wire Line
+	2530 3020 3490 3020
+Wire Wire Line
+	2530 3120 3490 3120
+Wire Wire Line
+	2530 3220 3490 3220
+Wire Wire Line
+	2530 3320 3490 3320
+Text Notes 2530 3320 0    50   ~ 0
+TMS
+Text Notes 2530 3220 0    50   ~ 0
+TDI
+Text Notes 2530 3120 0    50   ~ 0
+TDO
+Text Notes 2530 3020 0    50   ~ 0
+TCK
+Text Notes 2530 2820 0    50   ~ 0
+VREF
+NoConn ~ 2430 8690
 Wire Bus Line
-	4630 2500 4630 2790
+	5630 6090 5630 8290
+NoConn ~ 13530 5990
+NoConn ~ 13530 6090
+NoConn ~ 13530 6390
+NoConn ~ 13530 6490
 Wire Bus Line
 	4630 7060 4630 8190
+Wire Wire Line
+	5200 8600 5500 8600
+Wire Wire Line
+	5470 8900 5470 8800
+Wire Wire Line
+	5470 9200 5470 9100
+$Comp
+L 000_LOCAL:LP2980 U3
+U 1 1 5D30DD1C
+P 1830 8590
+F 0 "U3" H 1880 8320 59  0000 C CNN
+F 1 "LP2980-3.3" H 1860 8860 59  0000 C CNN
+F 2 "000_LOCAL:SOT-23-5" H 1830 8590 50  0001 C CNN
+F 3 "" H 1830 8590 50  0001 C CNN
+	1    1830 8590
+	1    0    0    -1  
+$EndComp
 Wire Bus Line
-	5630 6190 5630 8290
+	4630 8190 5100 8190
+Connection ~ 5100 8190
 Wire Bus Line
 	5630 8290 16130 8290
 Wire Wire Line
@@ -1145,73 +1144,23 @@ Wire Wire Line
 Wire Bus Line
 	16130 4390 16130 8290
 Wire Bus Line
-	4630 8190 10800 8190
+	5100 8190 5100 9100
 Wire Bus Line
 	1980 5110 1980 7060
 Wire Bus Line
-	12830 4390 12830 6590
+	5100 8190 10800 8190
+Wire Bus Line
+	12830 4390 12830 6490
 Wire Bus Line
 	3590 2790 3590 4160
 Wire Bus Line
 	10800 5090 10800 8190
 Wire Bus Line
-	15630 5590 15630 8190
+	15630 5490 15630 8190
 Wire Bus Line
 	4630 2790 4630 7060
 Wire Bus Line
 	3520 5110 3520 7060
 Wire Bus Line
 	13030 4790 13030 8190
-$Comp
-L Device:Net-Tie_2 NT3
-U 1 1 5FD83265
-P 3000 3020
-F 0 "NT3" H 3000 3050 50  0001 C CNN
-F 1 "Net-Tie_2" H 3000 2990 50  0001 C CNN
-F 2 "000_LOCAL:Net_Tie_2_0.18mm" H 3000 3020 50  0001 C CNN
-F 3 "~" H 3000 3020 50  0001 C CNN
-	1    3000 3020
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3100 3020 3490 3020
-$Comp
-L Device:Net-Tie_2 NT4
-U 1 1 5FD846AF
-P 3000 3120
-F 0 "NT4" H 3000 3150 50  0001 C CNN
-F 1 "Net-Tie_2" H 3000 3090 50  0001 C CNN
-F 2 "000_LOCAL:Net_Tie_2_0.18mm" H 3000 3120 50  0001 C CNN
-F 3 "~" H 3000 3120 50  0001 C CNN
-	1    3000 3120
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3100 3120 3490 3120
-$Comp
-L Device:Net-Tie_2 NT5
-U 1 1 5FD8498E
-P 3000 3220
-F 0 "NT5" H 3000 3250 50  0001 C CNN
-F 1 "Net-Tie_2" H 3000 3190 50  0001 C CNN
-F 2 "000_LOCAL:Net_Tie_2_0.18mm" H 3000 3220 50  0001 C CNN
-F 3 "~" H 3000 3220 50  0001 C CNN
-	1    3000 3220
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3100 3220 3490 3220
-$Comp
-L Device:Net-Tie_2 NT6
-U 1 1 5FD84CB8
-P 3000 3320
-F 0 "NT6" H 3000 3350 50  0001 C CNN
-F 1 "Net-Tie_2" H 3000 3290 50  0001 C CNN
-F 2 "000_LOCAL:Net_Tie_2_0.18mm" H 3000 3320 50  0001 C CNN
-F 3 "~" H 3000 3320 50  0001 C CNN
-	1    3000 3320
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3100 3320 3490 3320
 $EndSCHEMATC
