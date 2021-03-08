@@ -5,8 +5,8 @@ $Descr USLedger 17000 11000
 encoding utf-8
 Sheet 1 1
 Title "REX NEC, BKW re-spin"
-Date "2020-11-30"
-Rev "4"
+Date "2021-03-07"
+Rev "5"
 Comp "Brian K. White - b.kenyon.w@gmail.com"
 Comment1 "Original design: Steven Adolph"
 Comment2 ""
@@ -988,15 +988,6 @@ NoConn ~ 6970 5380
 NoConn ~ 6970 5280
 NoConn ~ 6970 4480
 NoConn ~ 3600 6130
-Wire Bus Line
-	3250 7060 3250 8180
-Connection ~ 3250 7060
-Entry Wire Line
-	3250 8180 3350 8280
-Wire Wire Line
-	3350 8280 3810 8280
-Text Label 3350 8280 0    50   ~ 0
-sVCC
 Entry Wire Line
 	6480 7400 6580 7500
 Wire Wire Line
@@ -1011,43 +1002,89 @@ Text Label 3700 2890 0    50   ~ 0
 TMS
 Text Label 3700 3830 0    50   ~ 0
 PORT_EN
-Text Notes 6510 6190 0    50   ~ 0
-~RESET
 $Comp
-L power:+5V #PWR?
-U 1 1 5FD817E1
-P 6970 6180
-F 0 "#PWR?" H 6970 6030 50  0001 C CNN
-F 1 "+5V" V 6990 6350 50  0000 C CNN
-F 2 "" H 6970 6180 50  0001 C CNN
-F 3 "" H 6970 6180 50  0001 C CNN
-	1    6970 6180
-	0    -1   -1   0   
-$EndComp
-Text Notes 10760 4280 0    50   ~ 0
-~RESET
-$Comp
-L power:+5V #PWR?
-U 1 1 5FD8D230
-P 11220 4270
-F 0 "#PWR?" H 11220 4120 50  0001 C CNN
-F 1 "+5V" V 11240 4440 50  0000 C CNN
-F 2 "" H 11220 4270 50  0001 C CNN
-F 3 "" H 11220 4270 50  0001 C CNN
-	1    11220 4270
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR?
+L power:GND #PWR0125
 U 1 1 5FDCE74B
 P 11220 3970
-F 0 "#PWR?" H 11220 3720 50  0001 C CNN
+F 0 "#PWR0125" H 11220 3720 50  0001 C CNN
 F 1 "GND" V 11200 3830 50  0000 R CNN
 F 2 "" H 11220 3970 50  0001 C CNN
 F 3 "" H 11220 3970 50  0001 C CNN
 	1    11220 3970
 	0    1    1    0   
 $EndComp
+$Comp
+L power:+5V #PWR0126
+U 1 1 6049858A
+P 3610 8280
+F 0 "#PWR0126" H 3610 8130 50  0001 C CNN
+F 1 "+5V" V 3630 8420 50  0000 L CNN
+F 2 "" H 3610 8280 50  0001 C CNN
+F 3 "" H 3610 8280 50  0001 C CNN
+	1    3610 8280
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 000_LOCAL:Net-Tie_2 NT1
+U 1 1 6049F9B3
+P 3710 8280
+F 0 "NT1" H 3710 8240 50  0001 C CNN
+F 1 "Net-Tie_2" H 3720 8410 50  0001 C CNN
+F 2 "000_LOCAL:Net_Tie_2_0.18mm" H 3710 8280 50  0001 C CNN
+F 3 "~" H 3710 8280 50  0001 C CNN
+	1    3710 8280
+	1    0    0    -1  
+$EndComp
+Text Label 3810 8280 2    50   ~ 0
+EN
+$Comp
+L power:+5V #PWR0109
+U 1 1 604B6F92
+P 11020 4270
+F 0 "#PWR0109" H 11020 4120 50  0001 C CNN
+F 1 "+5V" V 11040 4410 50  0000 L CNN
+F 2 "" H 11020 4270 50  0001 C CNN
+F 3 "" H 11020 4270 50  0001 C CNN
+	1    11020 4270
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 000_LOCAL:Net-Tie_2 NT2
+U 1 1 604B6FEA
+P 11120 4270
+F 0 "NT2" H 11120 4230 50  0001 C CNN
+F 1 "Net-Tie_2" H 11130 4400 50  0001 C CNN
+F 2 "000_LOCAL:Net_Tie_2_0.18mm" H 11120 4270 50  0001 C CNN
+F 3 "~" H 11120 4270 50  0001 C CNN
+	1    11120 4270
+	1    0    0    -1  
+$EndComp
+Text Label 11220 4270 2    50   ~ 0
+~RESET_U2
+$Comp
+L power:+5V #PWR0103
+U 1 1 604EC72A
+P 6770 6180
+F 0 "#PWR0103" H 6770 6030 50  0001 C CNN
+F 1 "+5V" V 6790 6320 50  0000 L CNN
+F 2 "" H 6770 6180 50  0001 C CNN
+F 3 "" H 6770 6180 50  0001 C CNN
+	1    6770 6180
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 000_LOCAL:Net-Tie_2 NT3
+U 1 1 604EC85E
+P 6870 6180
+F 0 "NT3" H 6870 6140 50  0001 C CNN
+F 1 "Net-Tie_2" H 6880 6310 50  0001 C CNN
+F 2 "000_LOCAL:Net_Tie_2_0.18mm" H 6870 6180 50  0001 C CNN
+F 3 "~" H 6870 6180 50  0001 C CNN
+	1    6870 6180
+	1    0    0    -1  
+$EndComp
+Text Label 6970 6180 2    50   ~ 0
+~RESET_U1
 Wire Bus Line
 	6480 7060 6480 7540
 Wire Bus Line
@@ -1057,9 +1094,9 @@ Wire Bus Line
 Wire Bus Line
 	13110 3870 13110 7060
 Wire Bus Line
+	10730 3870 10730 7060
+Wire Bus Line
 	6480 3880 6480 7060
 Wire Bus Line
 	3250 4430 3250 7060
-Wire Bus Line
-	10730 3870 10730 7060
 $EndSCHEMATC
