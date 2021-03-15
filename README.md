@@ -1,6 +1,6 @@
-# REX
-REX for TRS-80 Model 100, 102, 200<br>
-BKW re-spin
+# REX Classic
+REX Classic for TRS-80 Model 100, 102, 200<br>
+BKW PCB
 
 ### Original design, Steven Adolph
 http://bitchin100.com/wiki/index.php?title=REX<br>
