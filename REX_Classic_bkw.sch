@@ -5,8 +5,8 @@ $Descr USLedger 17000 11000
 encoding utf-8
 Sheet 1 1
 Title "REX Classic, BKW re-spin"
-Date "2021-03-14"
-Rev "14"
+Date "2021-05-23"
+Rev "17"
 Comp "Brian K. White - b.kenyon.w@gmail.com"
 Comment1 "Original design: Steven Adolph"
 Comment2 ""
@@ -982,7 +982,7 @@ U 1 1 605174E3
 P 2800 5860
 F 0 "J1" H 2750 6770 50  0000 C CNN
 F 1 "TRS-80_Model_100_Option_ROM" H 2750 6670 50  0000 C CNN
-F 2 "000_LOCAL:Molex78805_PCB" H 2262 4998 60  0001 L CNN
+F 2 "000_LOCAL:Molex78802_PCB_28" H 2262 4998 60  0001 L CNN
 F 3 "" H 3000 6160 60  0001 L CNN
 	1    2800 5860
 	1    0    0    -1  
@@ -1137,9 +1137,9 @@ Wire Bus Line
 Wire Bus Line
 	12830 4390 12830 6490
 Wire Bus Line
-	15630 5490 15630 8190
-Wire Bus Line
 	5100 8190 10800 8190
+Wire Bus Line
+	15630 5490 15630 8190
 Wire Bus Line
 	3590 2790 3590 4160
 Wire Bus Line
