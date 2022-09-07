@@ -16,6 +16,8 @@ _autosave-*
 *-save.kicad_pcb
 *-cache.lib
 fp-info-cache
+*-backups/
+*.round-tracks-config
 
 # Netlist files (exported from Eeschema)
 *.net
