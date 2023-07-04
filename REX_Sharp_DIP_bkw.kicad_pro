@@ -57,7 +57,9 @@
         }
       ],
       "drc_exclusions": [
-        "courtyards_overlap|142527999|92487001|00000000-0000-0000-0000-00005e77bbd9|00000000-0000-0000-0000-00005e79b6a9"
+        "courtyards_overlap|151313001|92937001|00000000-0000-0000-0000-00005e77bc1a|dc96fe81-fde8-4445-a94b-624b3b9b5df4",
+        "courtyards_overlap|158363001|97236999|4323a7a8-c241-4586-9776-1437dfff587b|ebc795ca-e8c4-4e3b-a272-5c532757539f",
+        "courtyards_overlap|160247601|103388999|05cd4842-0d08-4ca7-af37-d265303d52a7|a5a0e3f7-49bb-49ed-8db1-0c506a737cff"
       ],
       "meta": {
         "filename": "board_design_settings.json",
@@ -95,9 +97,9 @@
         "padstack": "error",
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
-        "silk_edge_clearance": "ignore",
+        "silk_edge_clearance": "warning",
         "silk_over_copper": "ignore",
-        "silk_overlap": "warning",
+        "silk_overlap": "ignore",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
@@ -128,8 +130,8 @@
         "min_microvia_drill": 0.3,
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
-        "min_text_height": 0.7999999999999999,
-        "min_text_thickness": 0.09999999999999999,
+        "min_text_height": 0.6,
+        "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
         "min_track_width": 0.19999999999999998,
         "min_via_annular_width": 0.09999999999999999,
@@ -424,7 +426,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "REX_Classic_NEC_bkw.kicad_pro",
+    "filename": "REX_Sharp_DIP_bkw.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -458,7 +460,7 @@
         "name": "Power",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.6,
+        "track_width": 0.3,
         "via_diameter": 0.6,
         "via_drill": 0.4,
         "wire_width": 6

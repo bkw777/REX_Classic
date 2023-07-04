@@ -1,15 +1,12 @@
 (kicad_sch (version 20230121) (generator eeschema)
 
-  (uuid 121db428-1a06-4610-a5f5-4dc5441e94b6)
+  (uuid e7796f74-e8a5-4a05-b81d-f0a2d0908c19)
 
   (paper "A4")
 
   (title_block
-    (title "REX Classic bkw")
-    (date "2023-07-02")
-    (rev "022")
-    (company "Brian K. White - b.kenyon.w@gmail.com")
-    (comment 1 "Original design: Steven Adolph")
+    (date "2023-06-27")
+    (rev "001")
   )
 
   (lib_symbols
@@ -1159,10 +1156,11 @@
     (uuid d7d558ba-d5ce-4b8b-9062-5c9a215893e3)
   )
 
-  (no_connect (at 215.9 91.44) (uuid 08277770-78bd-4846-b6ff-3be39481f3f4))
+  (no_connect (at 215.9 93.98) (uuid 1c62982c-3893-4ba6-bb16-37b3aa151239))
   (no_connect (at 142.24 144.78) (uuid 1cc5f6eb-64eb-4b29-97e6-a532effca597))
-  (no_connect (at 215.9 96.52) (uuid 63d75fb4-7334-49ba-9a06-ccfe5931fdf8))
+  (no_connect (at 215.9 96.52) (uuid 80b12691-b343-4aad-9694-12fac7217fde))
   (no_connect (at 167.64 73.66) (uuid a410beed-4926-4a2b-b142-d6d91ecbd3b2))
+  (no_connect (at 215.9 91.44) (uuid ae827736-59c7-45a9-b8ad-849225429d67))
   (no_connect (at 50.8 55.88) (uuid b0c4b098-80f8-4069-9701-a4839ee70b13))
   (no_connect (at 50.8 58.42) (uuid b0c4b098-80f8-4069-9701-a4839ee70b14))
   (no_connect (at 50.8 60.96) (uuid b0c4b098-80f8-4069-9701-a4839ee70b15))
@@ -1174,9 +1172,8 @@
   (no_connect (at 167.64 60.96) (uuid bb058d99-7b9d-4c54-b3a9-22735db807a5))
   (no_connect (at 167.64 53.34) (uuid cca82696-c7bf-4249-a3fc-5d7f9776202f))
   (no_connect (at 167.64 50.8) (uuid df831431-c4ab-4037-97b8-634f34e963ad))
-  (no_connect (at 215.9 93.98) (uuid e5cf154a-e5aa-42bb-87bd-fc53ab23dc1f))
   (no_connect (at 167.64 48.26) (uuid e9b4e371-1c2d-4497-9d64-04f22474ee8f))
-  (no_connect (at 215.9 88.9) (uuid ef4fd7d0-4b05-4591-8212-aff0440fc9e3))
+  (no_connect (at 215.9 88.9) (uuid edd35f2e-44ee-4283-98a9-6e0c54fd02b1))
 
   (wire (pts (xy 251.46 71.12) (xy 251.46 73.66))
     (stroke (width 0) (type default))
@@ -1658,34 +1655,44 @@
     (pin "1" (uuid af19cf8d-5b50-45c4-a0b8-caed8b599ebd))
     (pin "2" (uuid 3afd4939-beac-4d55-bb7b-2512d029dec2))
     (instances
-      (project "REX_Classic_bkw"
+      (project ""
         (path "/121db428-1a06-4610-a5f5-4dc5441e94b6"
+          (reference "R1") (unit 1)
+        )
+      )
+      (project "REX_Classic_bkw_fancy"
+        (path "/e7796f74-e8a5-4a05-b81d-f0a2d0908c19"
           (reference "R1") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "000_LOCAL:C") (at 162.56 142.24 0) (unit 1)
+  (symbol (lib_id "000_LOCAL:C") (at 177.8 139.7 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-0000327b8adf)
-    (property "Reference" "C1" (at 165.608 143.002 0)
+    (property "Reference" "C1" (at 180.848 140.462 0)
       (effects (font (size 1.4986 1.4986)) (justify left bottom))
     )
-    (property "Value" "1uF" (at 165.608 145.542 0)
+    (property "Value" "1uF" (at 180.848 143.002 0)
       (effects (font (size 1.4986 1.4986)) (justify left bottom))
     )
-    (property "Footprint" "000_LOCAL:C_0805" (at 162.56 142.24 0)
+    (property "Footprint" "000_LOCAL:C_0805" (at 177.8 139.7 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 162.56 142.24 0)
+    (property "Datasheet" "" (at 177.8 139.7 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 3a7fe2b2-5947-4de6-bf3a-0c17d8991fa8))
-    (pin "2" (uuid a9db1404-c86d-489a-9b88-fe75256087cf))
+    (pin "1" (uuid 24c3d0ef-9875-43b3-aa67-a4f37389a3ae))
+    (pin "2" (uuid 7d85dbe0-7fc9-4f4b-96cf-39d67d5bbe93))
     (instances
-      (project "REX_Classic_bkw"
+      (project ""
         (path "/121db428-1a06-4610-a5f5-4dc5441e94b6"
+          (reference "C1") (unit 1)
+        )
+      )
+      (project "REX_Classic_bkw_fancy"
+        (path "/e7796f74-e8a5-4a05-b81d-f0a2d0908c19"
           (reference "C1") (unit 1)
         )
       )
@@ -1709,58 +1716,73 @@
     )
     (pin "1" (uuid 7a2d58b4-ff60-4fd8-bb48-e394425704f1))
     (instances
-      (project "REX_Classic_bkw"
+      (project ""
         (path "/121db428-1a06-4610-a5f5-4dc5441e94b6"
+          (reference "#PWR0103") (unit 1)
+        )
+      )
+      (project "REX_Classic_bkw_fancy"
+        (path "/e7796f74-e8a5-4a05-b81d-f0a2d0908c19"
           (reference "#PWR0103") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "power:GND") (at 162.56 146.05 0) (unit 1)
+  (symbol (lib_id "power:GND") (at 177.8 143.51 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d2439a2)
-    (property "Reference" "#PWR0104" (at 162.56 152.4 0)
+    (property "Reference" "#PWR0104" (at 177.8 149.86 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 162.56 149.86 0)
+    (property "Value" "GND" (at 177.927 147.9042 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 162.56 146.05 0)
+    (property "Footprint" "" (at 177.8 143.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 162.56 146.05 0)
+    (property "Datasheet" "" (at 177.8 143.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f2e52ec1-52a1-4c87-8a3b-3bfbec2d6084))
+    (pin "1" (uuid 545efdf4-73d7-405c-8c8b-50d2f328dc4b))
     (instances
-      (project "REX_Classic_bkw"
+      (project ""
         (path "/121db428-1a06-4610-a5f5-4dc5441e94b6"
+          (reference "#PWR0104") (unit 1)
+        )
+      )
+      (project "REX_Classic_bkw_fancy"
+        (path "/e7796f74-e8a5-4a05-b81d-f0a2d0908c19"
           (reference "#PWR0104") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "power:+3V3") (at 162.56 138.43 0) (unit 1)
+  (symbol (lib_id "power:+3V3") (at 177.8 135.89 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d2593b3)
-    (property "Reference" "#PWR0105" (at 162.56 142.24 0)
+    (property "Reference" "#PWR0105" (at 177.8 139.7 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+3V3" (at 162.56 134.62 0)
+    (property "Value" "+3V3" (at 178.181 131.4958 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 162.56 138.43 0)
+    (property "Footprint" "" (at 177.8 135.89 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 162.56 138.43 0)
+    (property "Datasheet" "" (at 177.8 135.89 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid e04621fa-663e-4376-955a-28a99b289369))
+    (pin "1" (uuid 8b1f1957-8dd2-446b-b1db-2499edce92ad))
     (instances
-      (project "REX_Classic_bkw"
+      (project ""
         (path "/121db428-1a06-4610-a5f5-4dc5441e94b6"
+          (reference "#PWR0105") (unit 1)
+        )
+      )
+      (project "REX_Classic_bkw_fancy"
+        (path "/e7796f74-e8a5-4a05-b81d-f0a2d0908c19"
           (reference "#PWR0105") (unit 1)
         )
       )
@@ -1787,8 +1809,13 @@
     (pin "3" (uuid 40d686c1-a901-448e-bf94-0e64178aef12))
     (pin "4" (uuid 88eb99bc-fc5e-496d-8df9-ec693ae77b25))
     (instances
-      (project "REX_Classic_bkw"
+      (project ""
         (path "/121db428-1a06-4610-a5f5-4dc5441e94b6"
+          (reference "J3") (unit 1)
+        )
+      )
+      (project "REX_Classic_bkw_fancy"
+        (path "/e7796f74-e8a5-4a05-b81d-f0a2d0908c19"
           (reference "J3") (unit 1)
         )
       )
@@ -1812,8 +1839,13 @@
     )
     (pin "1" (uuid 7829d899-9a71-44cf-af2d-bc250d2fd21f))
     (instances
-      (project "REX_Classic_bkw"
+      (project ""
         (path "/121db428-1a06-4610-a5f5-4dc5441e94b6"
+          (reference "#PWR0106") (unit 1)
+        )
+      )
+      (project "REX_Classic_bkw_fancy"
+        (path "/e7796f74-e8a5-4a05-b81d-f0a2d0908c19"
           (reference "#PWR0106") (unit 1)
         )
       )
@@ -1837,8 +1869,13 @@
     )
     (pin "1" (uuid 70b560cb-e955-4d83-a721-0be446936f9f))
     (instances
-      (project "REX_Classic_bkw"
+      (project ""
         (path "/121db428-1a06-4610-a5f5-4dc5441e94b6"
+          (reference "#PWR0107") (unit 1)
+        )
+      )
+      (project "REX_Classic_bkw_fancy"
+        (path "/e7796f74-e8a5-4a05-b81d-f0a2d0908c19"
           (reference "#PWR0107") (unit 1)
         )
       )
@@ -1862,8 +1899,13 @@
     )
     (pin "1" (uuid 03b0f843-daf3-4179-8b72-59979d0b8c59))
     (instances
-      (project "REX_Classic_bkw"
+      (project ""
         (path "/121db428-1a06-4610-a5f5-4dc5441e94b6"
+          (reference "#PWR0108") (unit 1)
+        )
+      )
+      (project "REX_Classic_bkw_fancy"
+        (path "/e7796f74-e8a5-4a05-b81d-f0a2d0908c19"
           (reference "#PWR0108") (unit 1)
         )
       )
@@ -1891,8 +1933,13 @@
     (pin "4" (uuid 2a0a27ca-e0b5-4152-b6e7-a8182bd8df98))
     (pin "5" (uuid a4b8eb57-70fb-4082-92e0-1757f3883ad5))
     (instances
-      (project "REX_Classic_bkw"
+      (project ""
         (path "/121db428-1a06-4610-a5f5-4dc5441e94b6"
+          (reference "U3") (unit 1)
+        )
+      )
+      (project "REX_Classic_bkw_fancy"
+        (path "/e7796f74-e8a5-4a05-b81d-f0a2d0908c19"
           (reference "U3") (unit 1)
         )
       )
@@ -1921,8 +1968,13 @@
     (pin "5" (uuid e3034ffc-34d6-4ea3-9daf-8f69a8b63d4f))
     (pin "6" (uuid 9b62fb89-62f6-423e-b061-50a8a334a20b))
     (instances
-      (project "REX_Classic_bkw"
+      (project ""
         (path "/121db428-1a06-4610-a5f5-4dc5441e94b6"
+          (reference "J2") (unit 1)
+        )
+      )
+      (project "REX_Classic_bkw_fancy"
+        (path "/e7796f74-e8a5-4a05-b81d-f0a2d0908c19"
           (reference "J2") (unit 1)
         )
       )
@@ -1946,8 +1998,13 @@
     )
     (pin "1" (uuid 3aec7437-040b-48e9-81de-7db4343c2132))
     (instances
-      (project "REX_Classic_bkw"
+      (project ""
         (path "/121db428-1a06-4610-a5f5-4dc5441e94b6"
+          (reference "#PWR0101") (unit 1)
+        )
+      )
+      (project "REX_Classic_bkw_fancy"
+        (path "/e7796f74-e8a5-4a05-b81d-f0a2d0908c19"
           (reference "#PWR0101") (unit 1)
         )
       )
@@ -1971,8 +2028,13 @@
     )
     (pin "1" (uuid 7945bef0-c1f6-438f-a630-e19cba9c6fab))
     (instances
-      (project "REX_Classic_bkw"
+      (project ""
         (path "/121db428-1a06-4610-a5f5-4dc5441e94b6"
+          (reference "#PWR0125") (unit 1)
+        )
+      )
+      (project "REX_Classic_bkw_fancy"
+        (path "/e7796f74-e8a5-4a05-b81d-f0a2d0908c19"
           (reference "#PWR0125") (unit 1)
         )
       )
@@ -1996,8 +2058,13 @@
     )
     (pin "1" (uuid a583f6c8-60a3-4543-90d0-a98b6f69ea25))
     (instances
-      (project "REX_Classic_bkw"
+      (project ""
         (path "/121db428-1a06-4610-a5f5-4dc5441e94b6"
+          (reference "#PWR0126") (unit 1)
+        )
+      )
+      (project "REX_Classic_bkw_fancy"
+        (path "/e7796f74-e8a5-4a05-b81d-f0a2d0908c19"
           (reference "#PWR0126") (unit 1)
         )
       )
@@ -2021,8 +2088,13 @@
     )
     (pin "1" (uuid 5daba8f8-df26-4c1a-9bcc-65602f5e32f3))
     (instances
-      (project "REX_Classic_bkw"
+      (project ""
         (path "/121db428-1a06-4610-a5f5-4dc5441e94b6"
+          (reference "#PWR0127") (unit 1)
+        )
+      )
+      (project "REX_Classic_bkw_fancy"
+        (path "/e7796f74-e8a5-4a05-b81d-f0a2d0908c19"
           (reference "#PWR0127") (unit 1)
         )
       )
@@ -2046,8 +2118,13 @@
     )
     (pin "1" (uuid 1938f371-b1db-4624-866d-ff4e6ef221e0))
     (instances
-      (project "REX_Classic_bkw"
+      (project ""
         (path "/121db428-1a06-4610-a5f5-4dc5441e94b6"
+          (reference "#PWR0128") (unit 1)
+        )
+      )
+      (project "REX_Classic_bkw_fancy"
+        (path "/e7796f74-e8a5-4a05-b81d-f0a2d0908c19"
           (reference "#PWR0128") (unit 1)
         )
       )
@@ -2071,8 +2148,13 @@
     )
     (pin "1" (uuid dfdb5329-86a2-444d-b90f-fe5d9a9cc336))
     (instances
-      (project "REX_Classic_bkw"
+      (project ""
         (path "/121db428-1a06-4610-a5f5-4dc5441e94b6"
+          (reference "#PWR0129") (unit 1)
+        )
+      )
+      (project "REX_Classic_bkw_fancy"
+        (path "/e7796f74-e8a5-4a05-b81d-f0a2d0908c19"
           (reference "#PWR0129") (unit 1)
         )
       )
@@ -2096,8 +2178,13 @@
     )
     (pin "1" (uuid 445d7b85-5228-4048-a6d4-7c2b063d1efd))
     (instances
-      (project "REX_Classic_bkw"
+      (project ""
         (path "/121db428-1a06-4610-a5f5-4dc5441e94b6"
+          (reference "#PWR0130") (unit 1)
+        )
+      )
+      (project "REX_Classic_bkw_fancy"
+        (path "/e7796f74-e8a5-4a05-b81d-f0a2d0908c19"
           (reference "#PWR0130") (unit 1)
         )
       )
@@ -2121,8 +2208,13 @@
     )
     (pin "1" (uuid cc2752c5-62e1-4067-b0af-d9cebd9d641d))
     (instances
-      (project "REX_Classic_bkw"
+      (project ""
         (path "/121db428-1a06-4610-a5f5-4dc5441e94b6"
+          (reference "#PWR0131") (unit 1)
+        )
+      )
+      (project "REX_Classic_bkw_fancy"
+        (path "/e7796f74-e8a5-4a05-b81d-f0a2d0908c19"
           (reference "#PWR0131") (unit 1)
         )
       )
@@ -2146,8 +2238,13 @@
     )
     (pin "1" (uuid 09427372-d356-4ea9-93d6-05eb6b4571cc))
     (instances
-      (project "REX_Classic_bkw"
+      (project ""
         (path "/121db428-1a06-4610-a5f5-4dc5441e94b6"
+          (reference "#PWR0132") (unit 1)
+        )
+      )
+      (project "REX_Classic_bkw_fancy"
+        (path "/e7796f74-e8a5-4a05-b81d-f0a2d0908c19"
           (reference "#PWR0132") (unit 1)
         )
       )
@@ -2214,8 +2311,13 @@
     (pin "8" (uuid af14edda-e259-4e3e-a611-d87a8c470310))
     (pin "9" (uuid 4dcb38b3-4e52-4210-89f6-8fae224409d2))
     (instances
-      (project "REX_Classic_bkw"
+      (project ""
         (path "/121db428-1a06-4610-a5f5-4dc5441e94b6"
+          (reference "U1") (unit 1)
+        )
+      )
+      (project "REX_Classic_bkw_fancy"
+        (path "/e7796f74-e8a5-4a05-b81d-f0a2d0908c19"
           (reference "U1") (unit 1)
         )
       )
@@ -2239,8 +2341,13 @@
     )
     (pin "1" (uuid 130a1f1c-e624-4cab-96de-94fac7498661))
     (instances
-      (project "REX_Classic_bkw"
+      (project ""
         (path "/121db428-1a06-4610-a5f5-4dc5441e94b6"
+          (reference "#PWR0102") (unit 1)
+        )
+      )
+      (project "REX_Classic_bkw_fancy"
+        (path "/e7796f74-e8a5-4a05-b81d-f0a2d0908c19"
           (reference "#PWR0102") (unit 1)
         )
       )
@@ -2264,8 +2371,13 @@
     )
     (pin "1" (uuid 9913654a-436e-4672-8fd8-6dc925a36093))
     (instances
-      (project "REX_Classic_bkw"
+      (project ""
         (path "/121db428-1a06-4610-a5f5-4dc5441e94b6"
+          (reference "#PWR0111") (unit 1)
+        )
+      )
+      (project "REX_Classic_bkw_fancy"
+        (path "/e7796f74-e8a5-4a05-b81d-f0a2d0908c19"
           (reference "#PWR0111") (unit 1)
         )
       )
@@ -2289,8 +2401,13 @@
     )
     (pin "1" (uuid 34910f7d-27ac-4e44-9a0e-05b942731d88))
     (instances
-      (project "REX_Classic_bkw"
+      (project ""
         (path "/121db428-1a06-4610-a5f5-4dc5441e94b6"
+          (reference "TP1") (unit 1)
+        )
+      )
+      (project "REX_Classic_bkw_fancy"
+        (path "/e7796f74-e8a5-4a05-b81d-f0a2d0908c19"
           (reference "TP1") (unit 1)
         )
       )
@@ -2314,8 +2431,13 @@
     )
     (pin "1" (uuid 30308d73-0423-4a09-b6f0-d3d617a8c747))
     (instances
-      (project "REX_Classic_bkw"
+      (project ""
         (path "/121db428-1a06-4610-a5f5-4dc5441e94b6"
+          (reference "TP2") (unit 1)
+        )
+      )
+      (project "REX_Classic_bkw_fancy"
+        (path "/e7796f74-e8a5-4a05-b81d-f0a2d0908c19"
           (reference "TP2") (unit 1)
         )
       )
@@ -2341,11 +2463,11 @@
     (pin "37" (uuid 1e9b7ec9-35b2-46bd-b169-9a9b4925102c))
     (pin "46" (uuid 6d1b2e12-427d-4ed9-b491-deddedb00c53))
     (pin "1" (uuid 133bc863-174c-4690-b658-69766fca1e56))
-    (pin "10" (uuid 0acde541-486f-4532-9a6d-c53031e52a50))
+    (pin "10" (uuid 00c8e912-72a1-4152-8aca-97f4b56fe773))
     (pin "11" (uuid 976f0423-03dd-405a-9c24-78a6c08d1872))
     (pin "12" (uuid 21a53f12-b0e8-45f9-b55a-0ff2e23f904e))
-    (pin "13" (uuid 01d91ae5-e2a4-4355-937c-10e93f33664d))
-    (pin "14" (uuid e618512d-93df-4c98-ab20-c67712cd7abc))
+    (pin "13" (uuid 19ccda15-bd95-4e7d-8947-e1e95b54f25a))
+    (pin "14" (uuid eff7fe2d-36d0-4315-94b0-f4788a853658))
     (pin "15" (uuid ae4ab89a-b604-4303-86b9-e9e3bb12c9b9))
     (pin "16" (uuid c2dbcd70-8d3b-40d6-9071-308ae2144f17))
     (pin "17" (uuid 8389a13c-6f05-44e8-a894-5612f86d317c))
@@ -2384,10 +2506,15 @@
     (pin "6" (uuid 8b8946f2-4e20-4eb1-9b66-21e40fd14150))
     (pin "7" (uuid 020bf99a-3b9f-4255-9d96-0cd575bb4c08))
     (pin "8" (uuid e8220d1e-4488-4f4c-8132-2cb7ef2b2fde))
-    (pin "9" (uuid 3a84f11a-e238-488a-aa13-4c8c93a50584))
+    (pin "9" (uuid 2e27b8fa-1585-439c-a541-b7bb0849eba0))
     (instances
-      (project "REX_Classic_bkw"
+      (project ""
         (path "/121db428-1a06-4610-a5f5-4dc5441e94b6"
+          (reference "U2") (unit 1)
+        )
+      )
+      (project "REX_Classic_bkw_fancy"
+        (path "/e7796f74-e8a5-4a05-b81d-f0a2d0908c19"
           (reference "U2") (unit 1)
         )
       )
@@ -2411,8 +2538,13 @@
     )
     (pin "1" (uuid 612ed3a1-f7d7-4920-a739-40eb1392e466))
     (instances
-      (project "REX_Classic_bkw"
+      (project ""
         (path "/121db428-1a06-4610-a5f5-4dc5441e94b6"
+          (reference "#PWR0115") (unit 1)
+        )
+      )
+      (project "REX_Classic_bkw_fancy"
+        (path "/e7796f74-e8a5-4a05-b81d-f0a2d0908c19"
           (reference "#PWR0115") (unit 1)
         )
       )
@@ -2436,8 +2568,13 @@
     )
     (pin "1" (uuid ef802a22-646c-4e25-a3ac-b3d450e4dcf9))
     (instances
-      (project "REX_Classic_bkw"
+      (project ""
         (path "/121db428-1a06-4610-a5f5-4dc5441e94b6"
+          (reference "#PWR0123") (unit 1)
+        )
+      )
+      (project "REX_Classic_bkw_fancy"
+        (path "/e7796f74-e8a5-4a05-b81d-f0a2d0908c19"
           (reference "#PWR0123") (unit 1)
         )
       )
@@ -2461,8 +2598,13 @@
     )
     (pin "1" (uuid d45ac843-32f7-41a4-b764-3ff2d5fd86bb))
     (instances
-      (project "REX_Classic_bkw"
+      (project ""
         (path "/121db428-1a06-4610-a5f5-4dc5441e94b6"
+          (reference "#PWR0133") (unit 1)
+        )
+      )
+      (project "REX_Classic_bkw_fancy"
+        (path "/e7796f74-e8a5-4a05-b81d-f0a2d0908c19"
           (reference "#PWR0133") (unit 1)
         )
       )
@@ -2486,111 +2628,14 @@
     )
     (pin "1" (uuid 482642ff-afd1-4ed8-a988-b716cbbb3d3f))
     (instances
-      (project "REX_Classic_bkw"
+      (project ""
         (path "/121db428-1a06-4610-a5f5-4dc5441e94b6"
           (reference "#PWR0134") (unit 1)
         )
       )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 175.26 146.05 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 6411be99-69b2-46bf-85e5-63fcd5c53432)
-    (property "Reference" "#PWR02" (at 175.26 152.4 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 175.26 149.86 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 175.26 146.05 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 175.26 146.05 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid a721ab64-6bf6-4ed5-9aaf-d3e0f2fa7233))
-    (instances
-      (project "REX_Classic_bkw"
-        (path "/121db428-1a06-4610-a5f5-4dc5441e94b6"
-          (reference "#PWR02") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "000_LOCAL:C") (at 92.71 142.24 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 7160b395-19b1-4a52-aa58-e9e312f6e59d)
-    (property "Reference" "C3" (at 95.758 143.002 0)
-      (effects (font (size 1.4986 1.4986)) (justify left bottom))
-    )
-    (property "Value" "1uF" (at 95.758 145.542 0)
-      (effects (font (size 1.4986 1.4986)) (justify left bottom))
-    )
-    (property "Footprint" "000_LOCAL:C_0805" (at 92.71 142.24 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 92.71 142.24 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 7030d4c7-6299-4bf4-b12e-d83be9e6f53e))
-    (pin "2" (uuid f5d7169b-4cda-4689-9a91-225444df1972))
-    (instances
-      (project "REX_Classic_bkw"
-        (path "/121db428-1a06-4610-a5f5-4dc5441e94b6"
-          (reference "C3") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+5V") (at 92.71 138.43 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 8522c54d-a4f6-4ad1-a793-985735a4a9e8)
-    (property "Reference" "#PWR03" (at 92.71 142.24 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+5V" (at 92.71 134.62 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 92.71 138.43 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 92.71 138.43 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 8f1fd0c4-48ae-4aa6-8eba-1add668db3b0))
-    (instances
-      (project "REX_Classic_bkw"
-        (path "/121db428-1a06-4610-a5f5-4dc5441e94b6"
-          (reference "#PWR03") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "000_LOCAL:C") (at 175.26 142.24 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 8657871d-3148-4f55-a057-cae86adf8864)
-    (property "Reference" "C2" (at 178.308 143.002 0)
-      (effects (font (size 1.4986 1.4986)) (justify left bottom))
-    )
-    (property "Value" "1uF" (at 178.308 145.542 0)
-      (effects (font (size 1.4986 1.4986)) (justify left bottom))
-    )
-    (property "Footprint" "000_LOCAL:C_0805" (at 175.26 142.24 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 175.26 142.24 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 134f0968-3b8e-4c12-9e27-eee9d92d5414))
-    (pin "2" (uuid 26e23664-9593-45df-a132-a30314d39f64))
-    (instances
-      (project "REX_Classic_bkw"
-        (path "/121db428-1a06-4610-a5f5-4dc5441e94b6"
-          (reference "C2") (unit 1)
+      (project "REX_Classic_bkw_fancy"
+        (path "/e7796f74-e8a5-4a05-b81d-f0a2d0908c19"
+          (reference "#PWR0134") (unit 1)
         )
       )
     )
@@ -2613,59 +2658,14 @@
     )
     (pin "1" (uuid 0338e159-808e-4df8-a7d2-ad5e1a021304))
     (instances
-      (project "REX_Classic_bkw"
+      (project ""
         (path "/121db428-1a06-4610-a5f5-4dc5441e94b6"
           (reference "#PWR0109") (unit 1)
         )
       )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 92.71 146.05 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 9a31ebbf-7a67-4e1c-820a-5890994ecc4a)
-    (property "Reference" "#PWR04" (at 92.71 152.4 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 92.71 149.86 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 92.71 146.05 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 92.71 146.05 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 81a389ba-0602-444b-be60-111ac0d190b1))
-    (instances
-      (project "REX_Classic_bkw"
-        (path "/121db428-1a06-4610-a5f5-4dc5441e94b6"
-          (reference "#PWR04") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+3V3") (at 175.26 138.43 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid d41c56a2-fc65-4e1f-96aa-61f9e0003840)
-    (property "Reference" "#PWR01" (at 175.26 142.24 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3V3" (at 175.26 134.62 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 175.26 138.43 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 175.26 138.43 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 4ffd0d72-be94-442d-a5b9-f8acab507173))
-    (instances
-      (project "REX_Classic_bkw"
-        (path "/121db428-1a06-4610-a5f5-4dc5441e94b6"
-          (reference "#PWR01") (unit 1)
+      (project "REX_Classic_bkw_fancy"
+        (path "/e7796f74-e8a5-4a05-b81d-f0a2d0908c19"
+          (reference "#PWR0109") (unit 1)
         )
       )
     )
@@ -2680,7 +2680,7 @@
     (property "Value" "Tandy_100_102_200_option_rom" (at 62.9794 40.513 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "000_LOCAL:Molex78802_PCB_28_REX" (at 60.96 68.58 0)
+    (property "Footprint" "000_LOCAL:Molex78802_PCB_28_REX_slots" (at 60.96 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 60.96 68.58 0)
@@ -2715,8 +2715,13 @@
     (pin "8" (uuid 917337dd-c19c-4a33-a7b8-4dc1cc71e4c3))
     (pin "9" (uuid ce895728-8d09-48bd-8572-8f626834fe5c))
     (instances
-      (project "REX_Classic_bkw"
+      (project ""
         (path "/121db428-1a06-4610-a5f5-4dc5441e94b6"
+          (reference "J1") (unit 1)
+        )
+      )
+      (project "REX_Classic_bkw_fancy"
+        (path "/e7796f74-e8a5-4a05-b81d-f0a2d0908c19"
           (reference "J1") (unit 1)
         )
       )
