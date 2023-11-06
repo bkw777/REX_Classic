@@ -6,8 +6,8 @@
 
   (title_block
     (title "REXCPM bkw")
-    (date "2023-10-07")
-    (rev "003")
+    (date "2023-11-05")
+    (rev "005")
     (company "Brian K. White - b.kenyon.w@gmail.com")
     (comment 1 "Original design: Steven Adolph")
     (comment 2 "Based on REXCPMv7")
@@ -1973,6 +1973,11 @@
     (uuid fbf1abd9-012a-4131-b459-40a48c1e3f70)
   )
 
+  (text "To program the CPLD\n\nSolder a piece of wire to JP1 with one end of the wire bridging JP1 and the other end free.\n\nInsert a Molex 78805 socket (15-29-9282) in a breadboard.\n\nConnect socket DIP pins\npin  1 - power 5v\npin 12 - jtag TMS\npin 13 - jtag TDI\npin 14 - power GND, jtag GND\npin 15 - jtag TDO\npin 17 - jtag TCK\n\nInsert REXCPM in socket.\n\nConnect jtag VREF (VCC/3v3) to wire on JP1\n\nAfter programming, desolder wire from JP1 and leave JP1 open."
+    (at 25.4 266.7 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 16cc4b18-29d2-425b-a26b-7aa50e3e81f3)
+  )
   (text "74LVC4245APW_118" (at 231.14 57.15 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 275d0264-c0b9-45e5-ba2b-a4ab35933d6d)
@@ -2812,13 +2817,13 @@
     (property "Reference" "U2" (at 326.0441 63.5 0)
       (effects (font (size 1.524 1.524)) (justify left))
     )
-    (property "Value" "CY61277" (at 326.0441 66.04 0)
+    (property "Value" "RMLV3216AGSA" (at 326.0441 66.04 0)
       (effects (font (size 1.524 1.524)) (justify left))
     )
     (property "Footprint" "000_LOCAL:TSOP-48" (at 323.85 101.6 0)
       (effects (font (size 1.524 1.524)) hide)
     )
-    (property "Datasheet" "datasheets/CY62177EV30LL.pdf" (at 323.85 101.6 0)
+    (property "Datasheet" "datasheets/RMLV3216AGSA.pdf" (at 323.85 101.6 0)
       (effects (font (size 1.524 1.524)) hide)
     )
     (pin "27" (uuid c43d8e0e-a182-42a7-b48a-caf2f9ad4496))
@@ -2918,8 +2923,8 @@
     (property "Datasheet" "~" (at 127 115.57 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid e4813150-9496-4493-b101-73d0e9686e46))
-    (pin "2" (uuid f6547442-e88a-4c5d-86f4-104bd0f73b01))
+    (pin "1" (uuid 51c5c22e-1548-4226-a81f-7eb4ae92cbbd))
+    (pin "2" (uuid 80a90ca5-a649-437b-a085-3ceac58357c3))
     (instances
       (project "REXCPM_bkw"
         (path "/121db428-1a06-4610-a5f5-4dc5441e94b6"
