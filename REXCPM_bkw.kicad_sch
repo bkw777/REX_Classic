@@ -7,7 +7,7 @@
   (title_block
     (title "REXCPM bkw")
     (date "2023-11-06")
-    (rev "006")
+    (rev "007")
     (company "Brian K. White - b.kenyon.w@gmail.com")
     (comment 1 "Original design: Steven Adolph")
     (comment 2 "Based on REXCPMv7")
@@ -3018,6 +3018,32 @@
     )
   )
 
+  (symbol (lib_id "000_LOCAL:C") (at 177.8 207.01 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 30a8bd49-247d-472f-adb9-439c832fac84)
+    (property "Reference" "C6" (at 175.26 205.74 0)
+      (effects (font (size 1.4986 1.4986)) (justify right))
+    )
+    (property "Value" "4.7u" (at 175.26 208.28 0)
+      (effects (font (size 1.4986 1.4986)) (justify right))
+    )
+    (property "Footprint" "000_LOCAL:C_0805" (at 177.8 207.01 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 177.8 207.01 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 28c82338-8f87-4d5a-97af-076fe69ce6a4))
+    (pin "2" (uuid 61405c21-9d9c-4bbd-a3cc-496daa56ced6))
+    (instances
+      (project "REXCPM_bkw"
+        (path "/121db428-1a06-4610-a5f5-4dc5441e94b6"
+          (reference "C6") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:GND") (at 190.5 240.03 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4a98c03b-83d3-4a89-8d0a-940ee5638b08)
@@ -3161,6 +3187,31 @@
       (project "REXCPM_bkw"
         (path "/121db428-1a06-4610-a5f5-4dc5441e94b6"
           (reference "#PWR02") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 177.8 210.82 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 6c411ad9-5304-44cd-8125-c62b9938b7f4)
+    (property "Reference" "#PWR030" (at 177.8 217.17 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 177.8 214.63 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 177.8 210.82 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 177.8 210.82 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid ff8b26dc-424f-44b6-b869-4476892cd271))
+    (instances
+      (project "REXCPM_bkw"
+        (path "/121db428-1a06-4610-a5f5-4dc5441e94b6"
+          (reference "#PWR030") (unit 1)
         )
       )
     )
