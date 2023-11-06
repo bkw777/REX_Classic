@@ -58,7 +58,7 @@
       ],
       "drc_exclusions": [
         "lib_footprint_mismatch|137218400|98806000|7892b8ad-811f-4db2-b098-a1645aee5e09|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_mismatch|150245300|101600000|a4e31138-a8e4-4626-9cf2-e92fd3cf29b5|00000000-0000-0000-0000-000000000000"
+        "lib_footprint_mismatch|152179000|100279200|57e5201a-cc45-4939-82e6-f0b8c576f40f|00000000-0000-0000-0000-000000000000"
       ],
       "meta": {
         "filename": "board_design_settings.json",
