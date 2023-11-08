@@ -1,10 +1,14 @@
 # REX Classic, BKW re-spin
-![](REX_Classic_bkw.jpg)
+![](PCB/out/REX_Classic_bkw.f.jpg)  
+![](PCB/out/REX_Classic_bkw.b.jpg)  
+![](PCB/out/REX_Classic_bkw.top.jpg)  
+![](PCB/out/REX_Classic_bkw.bottom.jpg)  
+![](PCB/out/REX_Classic_bkw.svg.jpg)  
 
 ### Directions
 http://tandy.wiki/REX
 
-Gerbers available in [releases](../../releases/latest).
+Gerbers & cpld bitstream in [releases](../../releases/latest).
 
 ### Original REX design is by Steven Adolph
 http://bitchin100.com/wiki/index.php?title=REX  
