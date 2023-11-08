@@ -3,7 +3,7 @@
 ![](PCB/out/REX_Classic_bkw.b.jpg)  
 ![](PCB/out/REX_Classic_bkw.top.jpg)  
 ![](PCB/out/REX_Classic_bkw.bottom.jpg)  
-![](PCB/out/REX_Classic_bkw.svg.jpg)  
+![](PCB/out/REX_Classic_bkw.svg)  
 
 ### Directions
 http://tandy.wiki/REX
