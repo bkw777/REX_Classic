@@ -44,7 +44,6 @@ NET "ce"  LOC = "P34"  ;
 # inputs
 NET "rd"  LOC = "p37" | PULLUP ;
 NET "ryby"  LOC = "P18" | PULLUP ;
-#NET "reset"  LOC = "p38"  | PULLUP   ;
 NET "cs_MAIN1"  LOC = "p10"  | PULLUP ; 
 NET "cs_MAIN2A"  LOC = "p12"  | PULLUP  ;
 NET "cs_OPT"  LOC = "p40" | PULLUP ;
@@ -59,6 +58,7 @@ NET "ale"  LOC = "p39" | PULLUP ;
 #NET ""  LOC = "p19"  ;
 #NET ""  LOC = "p20"  ;
 #NET ""  LOC = "p21"  ;
+#NET "reset"  LOC = "p38"  | PULLUP   ;
 
 
 #PACE: Start of PACE Area Constraints
