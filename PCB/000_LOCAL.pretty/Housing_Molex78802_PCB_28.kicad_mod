@@ -1,0 +1,164 @@
+(footprint "Housing_Molex78802_PCB_28"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "98b18e34-82d5-42de-882b-a9cee6ff249b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Housing_Molex78802_PCB_28"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "b1f67bd3-09ac-4d4b-b521-5b7ab1c9ab5c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9490aab3-5d5c-4899-9cab-6a3d98b9dd7c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "3d printed carrier Molex78802 PCB 28"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "231eb79e-c6ed-41c6-9dd7-58559c691cf5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
+	(fp_line
+		(start -19 -8)
+		(end -19 6.4)
+		(stroke
+			(width 0.01)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "abd243d3-5eab-4d75-831d-0361b2452897")
+	)
+	(fp_line
+		(start -17.1 8.3)
+		(end -19 6.4)
+		(stroke
+			(width 0.01)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "f8c5db5e-7014-4dfa-9297-1181e6b62834")
+	)
+	(fp_line
+		(start -17.1 8.3)
+		(end 18.7 8.3)
+		(stroke
+			(width 0.01)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "782eafe2-f271-4edc-a1e1-e55036795b74")
+	)
+	(fp_line
+		(start 18.7 -8.3)
+		(end -18.7 -8.3)
+		(stroke
+			(width 0.01)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "d215f531-b59b-446d-896f-7036e0ea77a2")
+	)
+	(fp_line
+		(start 19 8)
+		(end 19 -8)
+		(stroke
+			(width 0.01)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "795b48e7-8a5f-4113-92a0-daa2d55616bf")
+	)
+	(fp_arc
+		(start -19 -8)
+		(mid -18.912132 -8.212132)
+		(end -18.7 -8.3)
+		(stroke
+			(width 0.01)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "1de31c82-84ac-4420-8b27-bea680a5fc18")
+	)
+	(fp_arc
+		(start 18.7 -8.3)
+		(mid 18.912132 -8.212132)
+		(end 19 -8)
+		(stroke
+			(width 0.01)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "4ed64a09-ce3b-4868-8371-c65f82e05bf4")
+	)
+	(fp_arc
+		(start 19 8)
+		(mid 18.912132 8.212132)
+		(end 18.7 8.3)
+		(stroke
+			(width 0.01)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "d4db5e0b-b995-4753-af6f-669ee326dee9")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "56a7df76-5c9b-4bfa-abf8-d04c3926aab5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/000_LOCAL.pretty/3d/Molex78802_PCB_28.step"
+		(offset
+			(xyz 0 0 -0.15)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+)
